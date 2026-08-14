@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
+import { motion, useReducedMotion } from 'framer-motion'
 import { generateWhatsAppLink } from '@/config/contact'
 import { Briefcase, Ship, Bus, MapPin, Calendar } from 'lucide-react'
 import clsx from 'clsx'
@@ -50,6 +51,7 @@ const inputClass =
   'w-full rounded-lg bg-gray-100 px-4 py-3 text-sm text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-800'
 
 export const TravelSearchSection: React.FC = () => {
+  const reduce = useReducedMotion()
   const [tab, setTab] = useState<SearchTab>('pacotes')
   const [formData, setFormData] = useState<TravelSearchData>({
     destination: '',
@@ -79,7 +81,12 @@ export const TravelSearchSection: React.FC = () => {
 
   return (
     <section className="relative z-20 -mt-24 px-4 pb-6 sm:-mt-28 sm:px-6 lg:-mt-32 lg:px-8">
-      <div className="mx-auto max-w-6xl rounded-2xl bg-white px-5 py-6 shadow-[0_18px_50px_-12px_rgba(0,0,0,0.22)] sm:px-8 sm:py-8">
+      <motion.div
+        className="mx-auto max-w-6xl rounded-2xl bg-white px-5 py-6 shadow-[0_18px_50px_-12px_rgba(0,0,0,0.22)] sm:px-8 sm:py-8"
+        initial={reduce ? { opacity: 0 } : { opacity: 0, y: 32 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
+      >
         <div className="mb-6 flex border-b border-gray-100">
           {TABS.map(({ id, label, icon: Icon }) => {
             const active = tab === id
@@ -162,7 +169,7 @@ export const TravelSearchSection: React.FC = () => {
             Solicitar orçamento
           </button>
         </form>
-      </div>
+      </motion.div>
     </section>
   )
 }

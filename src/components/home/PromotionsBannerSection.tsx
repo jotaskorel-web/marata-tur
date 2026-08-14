@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Section } from '@/components/ui/Layout'
 import { SectionTitle } from '@/components/ui/Typography'
+import { Reveal } from '@/components/ui/Reveal'
 import { trips } from '@/data'
 import { Trip } from '@/types'
 import { formatBRL, generateWhatsAppLink, WHATSAPP_MESSAGES } from '@/config/contact'
@@ -70,6 +71,7 @@ export const PromotionsBannerSection: React.FC = () => {
         subtitle="Vagas limitadas nos pacotes mais procurados da Live Tur. Reserve pelo site ou pelo WhatsApp."
       />
 
+      <Reveal>
       <div
         className="relative"
         onMouseEnter={() => setPaused(true)}
@@ -182,6 +184,7 @@ export const PromotionsBannerSection: React.FC = () => {
           </>
         )}
       </div>
+      </Reveal>
 
       {promos.length > 1 && (
         <div className="mt-6 flex items-center justify-center gap-2">
