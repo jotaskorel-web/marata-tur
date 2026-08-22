@@ -1,6 +1,7 @@
 .next/
 node_modules/
 *.log
+*.tsbuildinfo
 *.pem
 .env.local
 .env.development.local
