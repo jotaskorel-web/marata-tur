@@ -17,7 +17,7 @@ export const DestinationsSection: React.FC = () => {
       <SectionTitle
         eyebrow="Destinos em destaque"
         title="Seu próximo destino começa aqui"
-        subtitle="Dos cruzeiros pelo litoral brasileiro às serras e ao exterior — explore os destinos mais procurados da Live Tur."
+        subtitle="Da Serra Gaúcha às termas, à fronteira e aos resorts — conheça os roteiros divulgados pela Maratá Tur."
       />
 
       <div className="mb-12">

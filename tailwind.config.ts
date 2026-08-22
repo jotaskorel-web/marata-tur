@@ -9,10 +9,19 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        orange: {
+          500: '#C97808',
+          600: '#A85F05',
+        },
+        blue: {
+          800: '#17304F',
+          900: '#13233A',
+          950: '#0B1626',
+        },
         brand: {
-          primary: '#F97316',
-          secondary: '#D32F2F',
-          accent: '#1A1A1A',
+          primary: '#13233A',
+          secondary: '#C97808',
+          accent: '#F0A928',
           light: '#F5F5F5',
           border: '#E0E0E0',
         },

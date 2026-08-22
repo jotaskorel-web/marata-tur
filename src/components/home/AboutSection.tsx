@@ -15,19 +15,18 @@ export const AboutSection: React.FC = () => {
         <Reveal delay={0.1}>
           <div className="text-center md:text-left">
             <p className="mb-2 text-sm font-semibold uppercase tracking-wider text-orange-500">
-              Sobre a Live Tur
+              Sobre a Maratá Tur
             </p>
-            <h2 className="mb-6 text-3xl font-bold md:text-4xl">Realizamos sonhos desde 2004</h2>
+            <h2 className="mb-6 text-3xl font-bold md:text-4xl">Mais de 30 anos na estrada</h2>
 
             <p className="mb-4 text-lg text-gray-600">
-              A Live Tur é uma agência de turismo que planeja cada viagem com carinho, dedicação e
-              compromisso — transformando sonhos em momentos inesquecíveis. Ver nossos clientes
-              felizes é a certeza de que estamos no caminho certo.
+              A Maratá Tur conecta pessoas com destinos há mais de três décadas, unindo experiência
+              em transporte, fretamento e turismo nacional a um atendimento próximo.
             </p>
 
             <p className="mb-8 text-lg text-gray-600">
-              De cruzeiros e pacotes nacionais a roteiros internacionais e viagens religiosas,
-              cuidamos de cada detalhe com acompanhamento da nossa equipe do início ao fim.
+              Organizamos passeios em grupo, viagens rodoviárias e transporte para eventos, com
+              ônibus de turismo, guias credenciados e pontos de embarque em Maratá e região.
             </p>
 
             <a

@@ -16,12 +16,13 @@ export const CATEGORY_LABELS: Record<Trip['category'], string> = {
 function tripDateLabel(trip: Trip): string {
   if (trip.dateLabel) return trip.dateLabel
   if (!trip.startDate) return 'Consulte datas'
-  const start = new Date(trip.startDate).toLocaleDateString('pt-BR', { day: '2-digit', month: 'short' })
+  const startDate = new Date(`${trip.startDate}T12:00:00`)
+  const start = startDate.toLocaleDateString('pt-BR', { day: '2-digit', month: 'short' })
   if (trip.endDate) {
-    const end = new Date(trip.endDate).toLocaleDateString('pt-BR', { day: '2-digit', month: 'short', year: 'numeric' })
+    const end = new Date(`${trip.endDate}T12:00:00`).toLocaleDateString('pt-BR', { day: '2-digit', month: 'short', year: 'numeric' })
     return `${start} a ${end}`
   }
-  return new Date(trip.startDate).toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' })
+  return startDate.toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' })
 }
 
 export const TripCard: React.FC<{ trip: Trip }> = ({ trip }) => {
@@ -71,12 +72,16 @@ export const TripCard: React.FC<{ trip: Trip }> = ({ trip }) => {
                 {formatBRL(trip.originalPrice)}
               </span>
             )}
+            {trip.priceLabel && <p className="mb-1 text-xs font-medium text-gray-500">{trip.priceLabel}</p>}
             <span className="text-xl font-bold text-blue-900">{formatBRL(trip.price)}</span>
             {trip.perPerson && <span className="text-sm text-gray-500"> /pessoa</span>}
             {trip.installments && trip.installmentValue && (
               <p className="text-xs text-gray-500">
                 ou {trip.installments}x de {formatBRL(trip.installmentValue)}
               </p>
+            )}
+            {trip.priceDetails?.[0] && (
+              <p className="mt-1 line-clamp-1 text-xs text-gray-500">{trip.priceDetails[0]}</p>
             )}
           </div>
         ) : (

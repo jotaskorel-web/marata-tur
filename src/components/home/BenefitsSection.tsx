@@ -4,43 +4,43 @@ import { Card } from '@/components/ui/Card'
 import { Reveal } from '@/components/ui/Reveal'
 import { ClipboardCheck, HeartHandshake, CreditCard, Users, Map, Bus } from 'lucide-react'
 
-// Diferenciais reais identificados nas publicações da Live Tur
+// Diferenciais identificados nas publicações públicas da Maratá Tur
 const benefits = [
   {
     id: '1',
     icon: ClipboardCheck,
     title: 'Roteiros planejados',
-    description: 'Pacotes completos com hotéis, city tours e taxas inclusas — é só embarcar.',
+    description: 'Passeios com programação, horários, itens inclusos e valores apresentados com clareza.',
   },
   {
     id: '2',
     icon: HeartHandshake,
     title: 'Atendimento personalizado',
-    description: 'Cada viagem é planejada com carinho e dedicação para o seu perfil.',
+    description: 'Contato direto com a equipe pelos dois canais oficiais de WhatsApp.',
   },
   {
     id: '3',
     icon: CreditCard,
-    title: 'Parcelamento facilitado',
-    description: 'Entrada baixa e parcelamento no cartão e no PIX para caber no seu bolso.',
+    title: 'Transporte confortável',
+    description: 'Ônibus de turismo e, em roteiros selecionados, veículos semi-leito climatizados.',
   },
   {
     id: '4',
     icon: Users,
     title: 'Acompanhamento na viagem',
-    description: 'A equipe Live Tur acompanha o grupo do início ao fim da jornada.',
+    description: 'Guias Cadastur acompanham os grupos nos roteiros divulgados.',
   },
   {
     id: '5',
     icon: Map,
     title: 'Guias e experiências locais',
-    description: 'Guias credenciados e experiências autênticas em cada destino.',
+    description: 'Experiências regionais com gastronomia, cultura, natureza e lazer.',
   },
   {
     id: '6',
     icon: Bus,
     title: 'Saídas de várias cidades',
-    description: 'Embarques de Areia, Alagoa Grande, João Pessoa, Recife e Rio de Janeiro.',
+    description: 'Embarques recorrentes em Maratá, Brochier e Montenegro.',
   },
 ]
 
@@ -48,8 +48,8 @@ export const BenefitsSection: React.FC = () => {
   return (
     <Section className="bg-gray-50">
       <SectionTitle
-        eyebrow="Por que a Live Tur"
-        title="Por que viajar com a Live Tur?"
+        eyebrow="Por que a Maratá Tur"
+        title="Por que viajar com a Maratá Tur?"
         subtitle="Os diferenciais que fazem cada viagem valer a pena."
       />
 

@@ -4,7 +4,7 @@ import { Footer } from '@/components/layout/Footer'
 import { Container, Section } from '@/components/ui/Layout'
 
 export const metadata: Metadata = {
-  title: 'Termos de Uso - LiveTur',
+  title: 'Termos de Uso - Maratá Tur',
 }
 
 export default function TermosPage() {
@@ -37,14 +37,14 @@ export default function TermosPage() {
                 <h2 className="text-2xl font-bold mb-4">3. Informações do Site</h2>
                 <p>
                   As informações fornecidas neste site são apenas para fins informativos.
-                  A LiveTur não garante a precisão, integridade ou atualidade de todas as informações.
+                  A Maratá Tur não garante a precisão, integridade ou atualidade de todas as informações.
                 </p>
               </section>
 
               <section>
                 <h2 className="text-2xl font-bold mb-4">4. Limitação de Responsabilidade</h2>
                 <p>
-                  A LiveTur não será responsável por quaisquer danos indiretos, incidentais,
+                  A Maratá Tur não será responsável por quaisquer danos indiretos, incidentais,
                   especiais ou conseqüentes resultantes do uso de nosso site.
                 </p>
               </section>
@@ -52,7 +52,7 @@ export default function TermosPage() {
               <section>
                 <h2 className="text-2xl font-bold mb-4">5. Links Externos</h2>
                 <p>
-                  Este site pode conter links para sites de terceiros. A LiveTur não é
+                  Este site pode conter links para sites de terceiros. A Maratá Tur não é
                   responsável pelo conteúdo desses sites externos.
                 </p>
               </section>
@@ -60,7 +60,7 @@ export default function TermosPage() {
               <section>
                 <h2 className="text-2xl font-bold mb-4">6. Modificações dos Termos</h2>
                 <p>
-                  A LiveTur se reserva o direito de modificar estes termos a qualquer momento.
+                  A Maratá Tur se reserva o direito de modificar estes termos a qualquer momento.
                   Alterações significativas serão notificadas no site.
                 </p>
               </section>

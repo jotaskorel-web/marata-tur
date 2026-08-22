@@ -11,7 +11,7 @@ export const TestimonialsSection: React.FC = () => {
     <Section id="depoimentos" className="bg-gray-100">
       <SectionTitle
         eyebrow="Depoimentos"
-        title="Quem viaja com a Live Tur conta melhor essa história"
+        title="Quem viaja com a Maratá Tur conta melhor essa história"
         subtitle="Falas reais publicadas por clientes e viajantes nas nossas redes sociais."
       />
 

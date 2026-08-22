@@ -3,41 +3,41 @@
 import React, { useState } from 'react'
 import { motion, useReducedMotion } from 'framer-motion'
 import { generateWhatsAppLink } from '@/config/contact'
-import { Briefcase, Ship, Bus, MapPin, Calendar } from 'lucide-react'
+import { Briefcase, Ticket, Bus, MapPin, Calendar } from 'lucide-react'
 import clsx from 'clsx'
 
-type SearchTab = 'pacotes' | 'cruzeiros' | 'excursoes' | 'destinos'
+type SearchTab = 'passeios' | 'fretamento' | 'eventos' | 'destinos'
 
 const TABS: { id: SearchTab; label: string; icon: typeof Briefcase }[] = [
-  { id: 'pacotes', label: 'Pacotes', icon: Briefcase },
-  { id: 'cruzeiros', label: 'Cruzeiros', icon: Ship },
-  { id: 'excursoes', label: 'Excursões', icon: Bus },
+  { id: 'passeios', label: 'Passeios', icon: Briefcase },
+  { id: 'fretamento', label: 'Fretamento', icon: Bus },
+  { id: 'eventos', label: 'Eventos', icon: Ticket },
   { id: 'destinos', label: 'Destinos', icon: MapPin },
 ]
 
 const TAB_LABELS: Record<SearchTab, string> = {
-  pacotes: 'Pacotes',
-  cruzeiros: 'Cruzeiros',
-  excursoes: 'Excursões',
+  passeios: 'Passeios',
+  fretamento: 'Fretamento',
+  eventos: 'Eventos',
   destinos: 'Destinos',
 }
 
 const PLACEHOLDERS: Record<SearchTab, { destination: string; departure: string }> = {
-  pacotes: {
-    destination: 'Ex.: Natal, Gramado, Belo Horizonte...',
-    departure: 'Ex.: Areia, João Pessoa, Recife',
+  passeios: {
+    destination: 'Ex.: Gramado, Termas Romanas, Rivera...',
+    departure: 'Ex.: Maratá, Brochier, Montenegro',
   },
-  cruzeiros: {
-    destination: 'Ex.: Carnaval em alto-mar, MSC Musica...',
-    departure: 'Ex.: Rio de Janeiro',
+  fretamento: {
+    destination: 'Conte o destino ou tipo de evento',
+    departure: 'Cidade de saída',
   },
-  excursoes: {
-    destination: 'Ex.: Tamandaré, Natuba, Taquaritinga...',
-    departure: 'Ex.: Areia, Alagoa Grande',
+  eventos: {
+    destination: 'Ex.: show, feira, evento corporativo...',
+    departure: 'Ex.: Maratá, Brochier, Montenegro',
   },
   destinos: {
-    destination: 'Ex.: Bariloche, Rio de Janeiro, Natal...',
-    departure: 'Ex.: Areia, João Pessoa',
+    destination: 'Ex.: Serra Gaúcha, Itá, Rivera...',
+    departure: 'Ex.: Maratá, Brochier, Montenegro',
   },
 }
 
@@ -52,7 +52,7 @@ const inputClass =
 
 export const TravelSearchSection: React.FC = () => {
   const reduce = useReducedMotion()
-  const [tab, setTab] = useState<SearchTab>('pacotes')
+  const [tab, setTab] = useState<SearchTab>('passeios')
   const [formData, setFormData] = useState<TravelSearchData>({
     destination: '',
     departureCity: '',

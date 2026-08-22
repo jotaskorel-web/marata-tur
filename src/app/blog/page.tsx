@@ -13,7 +13,7 @@ import { Calendar, Clock, ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Blog — dicas e roteiros de viagem',
-  description: 'Dicas de viagem, roteiros e novidades da Live Tur sobre os destinos que operamos.',
+  description: 'Dicas, roteiros e novidades da Maratá Tur sobre os destinos divulgados.',
 }
 
 export default function BlogPage() {
@@ -45,7 +45,7 @@ export default function BlogPage() {
                     <div className="mb-4 flex items-center gap-4 border-t border-gray-100 pt-4 text-xs text-gray-500">
                       <span className="flex items-center gap-1">
                         <Calendar className="h-3 w-3" />
-                        {new Date(post.date).toLocaleDateString('pt-BR')}
+                        {new Date(`${post.date}T12:00:00`).toLocaleDateString('pt-BR')}
                       </span>
                       <span className="flex items-center gap-1">
                         <Clock className="h-3 w-3" />

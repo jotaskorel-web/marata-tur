@@ -67,7 +67,7 @@ p {
 button:focus-visible,
 a:focus-visible,
 input:focus-visible {
-  outline: 2px solid #f97316;
+  outline: 2px solid #c97808;
   outline-offset: 2px;
 }
 
@@ -99,7 +99,7 @@ a {
 .header-whatsapp-cta:focus,
 .header-whatsapp-cta:active {
   color: #ffffff !important;
-  background-color: #f97316 !important;
+  background-color: #c97808 !important;
 }
 
 /* Form styles */
@@ -113,7 +113,7 @@ select {
 input:focus,
 textarea:focus,
 select:focus {
-  outline: 2px solid #f97316;
+  outline: 2px solid #c97808;
   outline-offset: 2px;
 }
 
@@ -151,7 +151,7 @@ select:focus {
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #f97316 0%, #c2410c 100%);
+  background: linear-gradient(135deg, #c97808 0%, #8f5004 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

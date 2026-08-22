@@ -17,7 +17,7 @@ export const TripsSection: React.FC = () => {
       <SectionTitle
         eyebrow="Próximas viagens"
         title="Embarque na sua próxima aventura"
-        subtitle="Confira os pacotes, cruzeiros e excursões com saídas confirmadas e vagas limitadas."
+        subtitle="Confira passeios, viagens rodoviárias e transportes para eventos com datas e valores divulgados."
       />
 
       <div className="mb-12">

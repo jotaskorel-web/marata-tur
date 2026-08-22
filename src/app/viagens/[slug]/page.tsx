@@ -7,7 +7,7 @@ import { Breadcrumb } from '@/components/ui/Breadcrumb'
 import { CATEGORY_LABELS } from '@/components/trips/TripCard'
 import { trips } from '@/data'
 import { formatBRL, generateWhatsAppLink, WHATSAPP_MESSAGES } from '@/config/contact'
-import { Calendar, MapPin, Clock, Bus, CheckCircle, MessageCircle } from 'lucide-react'
+import { Calendar, MapPin, Clock, Bus, CheckCircle, MessageCircle, XCircle, Instagram } from 'lucide-react'
 import { notFound } from 'next/navigation'
 
 interface PageProps {
@@ -27,8 +27,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 function dateText(trip: (typeof trips)[number]): string {
   if (trip.dateLabel) return trip.dateLabel
   if (!trip.startDate) return 'Consulte datas'
-  const start = new Date(trip.startDate).toLocaleDateString('pt-BR')
-  return trip.endDate ? `${start} a ${new Date(trip.endDate).toLocaleDateString('pt-BR')}` : start
+  const start = new Date(`${trip.startDate}T12:00:00`).toLocaleDateString('pt-BR')
+  return trip.endDate ? `${start} a ${new Date(`${trip.endDate}T12:00:00`).toLocaleDateString('pt-BR')}` : start
 }
 
 export default function TripDetailPage({ params }: PageProps) {
@@ -119,6 +119,20 @@ export default function TripDetailPage({ params }: PageProps) {
                 </div>
               )}
 
+              {trip.notIncluded && trip.notIncluded.length > 0 && (
+                <div className="mb-12">
+                  <h2 className="mb-4 text-2xl font-bold md:text-3xl">Não está incluso</h2>
+                  <ul className="space-y-3">
+                    {trip.notIncluded.map((item, i) => (
+                      <li key={i} className="flex items-start gap-3 text-gray-700">
+                        <XCircle className="mt-0.5 h-5 w-5 flex-shrink-0 text-red-500" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
               {/* Roteiro */}
               {trip.itinerary && trip.itinerary.length > 0 && (
                 <div className="mb-12">
@@ -187,8 +201,15 @@ export default function TripDetailPage({ params }: PageProps) {
                     {trip.originalPrice && (
                       <p className="text-sm text-gray-200 line-through">{formatBRL(trip.originalPrice)}</p>
                     )}
-                    <p className="text-xs text-gray-200">A partir de{trip.perPerson ? ' (por pessoa)' : ''}</p>
+                    <p className="text-xs text-gray-200">
+                      {trip.priceLabel || (trip.perPerson ? 'Por pessoa' : 'Valor divulgado')}
+                    </p>
                     <p className="text-4xl font-bold">{formatBRL(trip.price)}</p>
+                    {trip.priceDetails && trip.priceDetails.length > 0 && (
+                      <ul className="mt-3 space-y-1 border-t border-white/20 pt-3 text-sm text-gray-100">
+                        {trip.priceDetails.map((detail) => <li key={detail}>{detail}</li>)}
+                      </ul>
+                    )}
                     {trip.installments && trip.installmentValue && (
                       <p className="mt-2 text-sm text-gray-100">
                         ou {trip.installments}x de {formatBRL(trip.installmentValue)}
@@ -216,6 +237,17 @@ export default function TripDetailPage({ params }: PageProps) {
                 <p className="text-center text-sm text-gray-200">
                   Atendimento especializado pelo WhatsApp
                 </p>
+                {trip.sourceUrl && (
+                  <a
+                    href={trip.sourceUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-4 flex items-center justify-center gap-2 border-t border-white/20 pt-4 text-sm font-medium text-white/90 hover:text-white"
+                  >
+                    <Instagram className="h-4 w-4" />
+                    Ver publicação original
+                  </a>
+                )}
               </div>
             </aside>
           </div>

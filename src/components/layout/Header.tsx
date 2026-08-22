@@ -2,12 +2,12 @@
 
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
 import { Menu, X } from 'lucide-react'
 import { Container } from '@/components/ui/Layout'
 import { WhatsAppIcon } from '@/components/ui/WhatsAppIcon'
 import { WHATSAPP_MESSAGES, generateWhatsAppLink } from '@/config/contact'
 import clsx from 'clsx'
+import { BrandLogo } from '@/components/ui/BrandLogo'
 
 const navigationLinks = [
   { label: 'Início', href: '/' },
@@ -52,21 +52,14 @@ export const Header: React.FC = () => {
       <Container>
         <nav className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center" aria-label="Live Tur — página inicial">
+          <Link href="/" className="flex items-center" aria-label="Maratá Tur — página inicial">
             <span
               className={clsx(
-                'relative block h-10 w-28 transition-all',
-                !solid && 'rounded-md bg-white/90 px-2 py-1'
+                'relative block transition-all',
+                !solid && 'rounded-md bg-white/95 px-3 py-2'
               )}
             >
-              <Image
-                src="/livetur.png"
-                alt="Live Tur"
-                fill
-                sizes="120px"
-                className="object-contain"
-                priority
-              />
+              <BrandLogo />
             </span>
           </Link>
 
@@ -95,7 +88,7 @@ export const Header: React.FC = () => {
               className="header-whatsapp-cta hidden sm:inline-flex items-center gap-2 rounded-full bg-orange-500 px-5 py-2.5 text-sm font-semibold !text-white transition-all hover:!bg-orange-500 hover:!text-white hover:brightness-110 hover:shadow-md"
             >
               <WhatsAppIcon className="h-4 w-4" />
-              Falar com a Live Tur
+              Falar com a Maratá Tur
             </a>
 
             <button
@@ -137,7 +130,7 @@ export const Header: React.FC = () => {
               className="header-whatsapp-cta mt-2 flex items-center justify-center gap-2 rounded-lg bg-orange-500 px-4 py-3 text-center font-semibold !text-white transition-all hover:!bg-orange-500 hover:!text-white hover:brightness-110"
             >
               <WhatsAppIcon className="h-5 w-5" />
-              Falar com a Live Tur
+              Falar com a Maratá Tur
             </a>
           </div>
         </div>

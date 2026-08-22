@@ -4,14 +4,14 @@ import { SectionTitle } from '@/components/ui/Typography'
 import { Card, ImagePlaceholder } from '@/components/ui/Card'
 import { Reveal } from '@/components/ui/Reveal'
 
-// Categorias reais trabalhadas pela Live Tur (baseadas nas viagens divulgadas)
+// Tipos de experiências divulgados pela Maratá Tur
 const experienceTypes = [
-  { id: '1', title: 'Cruzeiros', description: 'Carnaval e temporadas em alto-mar', image: '/images/experiences/cruzeiro.jpg' },
-  { id: '2', title: 'Pacotes nacionais', description: 'Aéreo + hotel pelo Brasil', image: '/images/experiences/jericoacoara.jpg' },
-  { id: '3', title: 'Turismo internacional', description: 'Roteiros como o Circuito Andino', image: '/images/cities/bariloche.jpg' },
-  { id: '4', title: 'Viagens religiosas', description: 'Aparecida, Canção Nova e santuários', image: '/images/cities/aparecida.jpg' },
-  { id: '5', title: 'Excursões', description: 'Bate-voltas e passeios regionais', image: '/images/experiences/grupo.jpg' },
-  { id: '6', title: 'Praias & All-Inclusive', description: 'Natal, Porto de Galinhas e mais', image: '/images/experiences/praia.jpg' },
+  { id: '1', title: 'Passeios de um dia', description: 'Cultura, gastronomia e natureza', image: '/images/marata/rota-das-lavandas.jpg' },
+  { id: '2', title: 'Termas e resorts', description: 'Hospedagem, lazer e pensão completa', image: '/images/marata/termas-romanas.jpg' },
+  { id: '3', title: 'Experiências regionais', description: 'Roteiros especiais pelo Sul do Brasil', image: '/images/marata/percorsi-anta-gorda.jpg' },
+  { id: '4', title: 'Viagens em grupo', description: 'Novos lugares e boas companhias', image: '/images/marata/cambara-do-sul.jpg' },
+  { id: '5', title: 'Transporte para eventos', description: 'Shows, feiras e eventos', image: '/images/marata/universo-alegria.jpg' },
+  { id: '6', title: 'Fretamento', description: 'Transporte para seu grupo ou empresa', image: '/images/marata/logo-marata-tur.jpg' },
 ]
 
 export const ExperienceTypesSection: React.FC = () => {
@@ -20,7 +20,7 @@ export const ExperienceTypesSection: React.FC = () => {
       <SectionTitle
         eyebrow="Tipos de experiência"
         title="Que tipo de viagem você quer viver?"
-        subtitle="A Live Tur trabalha com diferentes estilos de viagem para todos os perfis."
+        subtitle="A Maratá Tur oferece passeios, viagens em grupo, transporte para eventos e fretamento."
       />
 
       <div className="grid grid-cols-2 gap-4 md:grid-cols-3">

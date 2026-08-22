@@ -9,9 +9,9 @@ import { MessageCircle, MapPin, Clock, Instagram } from 'lucide-react'
 import { CONTACT, generateWhatsAppLink, WHATSAPP_MESSAGES } from '@/config/contact'
 
 export const metadata: Metadata = {
-  title: 'Contato — fale com a Live Tur',
+  title: 'Contato — fale com a Maratá Tur',
   description:
-    'Fale com a Live Tur pelo WhatsApp, Instagram ou pelo formulário. Atendimento especializado para a sua próxima viagem.',
+    'Fale com a Maratá Tur pelo WhatsApp, Instagram ou pelo formulário para reservar passeios e solicitar fretamentos.',
 }
 
 export default function ContatoPage() {
@@ -41,16 +41,12 @@ export default function ContatoPage() {
       icon: MapPin,
       title: 'Localização',
       lines: [{ text: `${CONTACT.address.city}, ${CONTACT.address.state} — ${CONTACT.address.country}` }],
-      note: 'Saídas de Areia, Alagoa Grande, João Pessoa, Recife e Rio de Janeiro',
+      note: 'Embarques recorrentes em Maratá, Brochier e Montenegro',
     },
     {
       icon: Clock,
       title: 'Horário de atendimento',
-      lines: [
-        { text: `Seg. a Sex.: ${CONTACT.businessHours.weekday}` },
-        { text: `Sábado: ${CONTACT.businessHours.saturday}` },
-        { text: `Domingo: ${CONTACT.businessHours.sunday}` },
-      ],
+      lines: [{ text: CONTACT.businessHours.note }],
     },
   ]
 

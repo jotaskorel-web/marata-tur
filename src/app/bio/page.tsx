@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import Image from 'next/image'
 import {
   MapPin,
   Plane,
@@ -10,10 +9,11 @@ import {
   ChevronRight,
 } from 'lucide-react'
 import { CONTACT, generateWhatsAppLink, WHATSAPP_MESSAGES } from '@/config/contact'
+import { BrandLogo } from '@/components/ui/BrandLogo'
 
 export const metadata: Metadata = {
-  title: 'Links — Live Tur',
-  description: 'Todos os links da Live Tur em um só lugar: viagens, destinos, WhatsApp e Instagram.',
+  title: 'Links — Maratá Tur',
+  description: 'Todos os links da Maratá Tur em um só lugar: passeios, destinos, WhatsApp e Instagram.',
   robots: 'index, follow',
 }
 
@@ -35,8 +35,8 @@ const links = [
   {
     icon: Star,
     emoji: '⭐',
-    label: 'Depoimentos dos clientes',
-    href: '/#depoimentos',
+    label: 'Conheça nossos serviços',
+    href: '/servicos',
     external: false,
   },
   {
@@ -55,12 +55,12 @@ export default function BioPage() {
         {/* Cabeçalho */}
         <div className="mb-8 text-center">
           <div className="relative mx-auto mb-4 h-20 w-20 overflow-hidden rounded-2xl bg-white shadow-md ring-1 ring-black/5">
-            <Image src="/livetur.png" alt="Live Tur" fill sizes="80px" className="object-contain p-2" priority />
+            <BrandLogo compact className="absolute inset-0 justify-center" />
           </div>
-          <h1 className="text-2xl font-bold text-gray-900">Live Tur</h1>
-          <p className="mt-1 text-sm font-medium text-orange-500">@live.tur</p>
+          <h1 className="text-2xl font-bold text-gray-900">Maratá Tur</h1>
+          <p className="mt-1 text-sm font-medium text-orange-500">@marata_tur</p>
           <p className="mx-auto mt-3 max-w-xs text-sm text-gray-600">
-            Realizamos sonhos desde 2004 · Cruzeiros, pacotes e excursões nacionais e internacionais.
+            Há mais de 30 anos conectando pessoas com destinos · Fretamento, transporte e turismo nacional.
           </p>
         </div>
 
@@ -101,7 +101,7 @@ export default function BioPage() {
           className="group mt-3 flex items-center gap-3 rounded-2xl bg-gradient-to-r from-purple-500 to-pink-500 px-5 py-4 text-white shadow-md transition-all hover:-translate-y-0.5 hover:shadow-lg active:translate-y-0"
         >
           <Instagram className="h-6 w-6" />
-          <span className="flex-1 font-semibold">📸 Instagram @live.tur</span>
+          <span className="flex-1 font-semibold">📸 Instagram @marata_tur</span>
           <ChevronRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
         </a>
 

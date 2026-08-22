@@ -1,7 +1,7 @@
 {
-  "name": "livetur-site",
+  "name": "marata-tur-site",
   "version": "1.0.0",
-  "description": "Site institucional para LiveTur - Agência de Turismo",
+  "description": "Site institucional da Maratá Tur - Fretamento e Turismo",
   "private": true,
   "scripts": {
     "dev": "next dev",

@@ -10,7 +10,7 @@ import { trips } from '@/data'
 export const metadata: Metadata = {
   title: 'Próximas viagens, pacotes e excursões',
   description:
-    'Confira cruzeiros, pacotes nacionais e internacionais, excursões e viagens religiosas da Live Tur. Filtre por categoria e fale conosco pelo WhatsApp.',
+    'Confira passeios, viagens rodoviárias e transportes para eventos da Maratá Tur. Veja datas, valores e fale conosco pelo WhatsApp.',
 }
 
 export default function ViagensPage() {
@@ -23,7 +23,7 @@ export default function ViagensPage() {
           <SectionTitle
             eyebrow="Próximas viagens"
             title="Escolha a sua próxima experiência"
-            subtitle="Cruzeiros, pacotes, excursões e roteiros internacionais — filtre por categoria e encontre a viagem ideal."
+            subtitle="Passeios, hospedagens, experiências regionais e transporte para eventos com informações publicadas pela agência."
           />
           <TripsExplorer trips={trips} />
         </Section>

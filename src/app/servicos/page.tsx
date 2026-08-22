@@ -8,56 +8,56 @@ import { Breadcrumb } from '@/components/ui/Breadcrumb'
 import { Card, ImagePlaceholder } from '@/components/ui/Card'
 import { Reveal } from '@/components/ui/Reveal'
 import { generateWhatsAppLink, WHATSAPP_MESSAGES } from '@/config/contact'
-import { Ship, Plane, Globe2, Church, Bus, Sun, ArrowRight, MessageCircle } from 'lucide-react'
+import { CalendarDays, Hotel, Utensils, Ticket, Bus, MapPin, ArrowRight, MessageCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Serviços — o que a Live Tur oferece',
+  title: 'Serviços — o que a Maratá Tur oferece',
   description:
-    'Cruzeiros, pacotes nacionais e internacionais, viagens religiosas, excursões e pacotes de praia all inclusive. Conheça os serviços da Live Tur.',
+    'Fretamento, transporte para eventos, passeios de um dia e viagens rodoviárias em grupo com a Maratá Tur.',
 }
 
 const services = [
   {
-    icon: Ship,
-    title: 'Cruzeiros',
-    image: '/images/trips/carnaval-msc.jpg',
-    description:
-      'Temporadas e Carnaval em alto-mar com a MSC Cruzeiros, pensão completa e roteiros pelo litoral brasileiro.',
-  },
-  {
-    icon: Plane,
-    title: 'Pacotes nacionais',
-    image: '/images/trips/circuito-montanhas.jpg',
-    description:
-      'Aéreo + hotel com city tours e guias locais para os principais destinos do Brasil, com voos diretos da Paraíba.',
-  },
-  {
-    icon: Globe2,
-    title: 'Turismo internacional',
-    image: '/images/gallery/bariloche.jpg',
-    description:
-      'Roteiros internacionais como o Circuito Andino entre Chile e Argentina, passando por Bariloche e Córdoba.',
-  },
-  {
-    icon: Church,
-    title: 'Viagens religiosas',
-    image: '/images/trips/religioso.jpg',
-    description:
-      'Romarias e jornadas de fé por Aparecida, Canção Nova, santuários e destinos de peregrinação.',
-  },
-  {
     icon: Bus,
-    title: 'Excursões regionais',
-    image: '/images/trips/taquaritinga.jpg',
+    title: 'Fretamento',
+    image: '/images/marata/logo-marata-tur.jpg',
     description:
-      'Bate-voltas e passeios curtos pela região, como a Tur das Uvas em Natuba e a Rota dos Mirantes em Taquaritinga.',
+      'Transporte para grupos, empresas, escolas e eventos, com orçamento direto pelo WhatsApp.',
   },
   {
-    icon: Sun,
-    title: 'Praias & All-Inclusive',
-    image: '/images/trips/natal-marsol.jpg',
+    icon: MapPin,
+    title: 'Passeios de um dia',
+    image: '/images/marata/rota-das-lavandas.jpg',
     description:
-      'Pacotes de praia com sistema all inclusive, como o Marsol Beach Resort em Natal e o litoral de Pernambuco.',
+      'Bate-voltas com roteiro organizado, transporte, guia e experiências gastronômicas ou culturais.',
+  },
+  {
+    icon: Hotel,
+    title: 'Viagens com hospedagem',
+    image: '/images/marata/trem-do-pampa.jpg',
+    description:
+      'Roteiros de mais dias com hotel, café da manhã e programação organizada conforme o pacote.',
+  },
+  {
+    icon: Ticket,
+    title: 'Transporte para eventos',
+    image: '/images/marata/universo-alegria.jpg',
+    description:
+      'Ida e volta para shows, feiras e eventos em Porto Alegre, Esteio e outros destinos.',
+  },
+  {
+    icon: Utensils,
+    title: 'Turismo de experiência',
+    image: '/images/marata/percorsi-anta-gorda.jpg',
+    description:
+      'Cultura, gastronomia, vinícolas, café colonial e contato com as tradições das comunidades visitadas.',
+  },
+  {
+    icon: CalendarDays,
+    title: 'Termas e resorts',
+    image: '/images/marata/grand-suites-ita.jpg',
+    description:
+      'Hospedagem com lazer, piscinas, refeições e opções all inclusive em viagens selecionadas.',
   },
 ]
 
@@ -70,7 +70,7 @@ export default function ServicosPage() {
           <Breadcrumb className="mb-6" items={[{ label: 'Início', href: '/' }, { label: 'Serviços' }]} />
           <SectionTitle
             eyebrow="Serviços"
-            title="Tudo o que a Live Tur faz por você"
+            title="Tudo o que a Maratá Tur faz por você"
             subtitle="Do sonho ao embarque: cuidamos de cada detalhe da sua viagem, seja qual for o estilo."
           />
 

@@ -18,37 +18,36 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Live Tur — Agência de Turismo | Viagens, Pacotes e Excursões',
-    template: '%s | Live Tur',
+    default: 'Maratá Tur — Fretamento, Transporte e Turismo',
+    template: '%s | Maratá Tur',
   },
   description:
-    'A Live Tur realiza sonhos desde 2004. Cruzeiros, pacotes nacionais e internacionais, excursões e viagens em grupo com conforto, segurança e parcelamento facilitado.',
+    'Há mais de 30 anos conectando pessoas com destinos. Fretamento, transporte, passeios e turismo nacional com saídas de Maratá e região.',
   keywords:
-    'live tur, turismo, viagens, pacotes turísticos, excursões, cruzeiros, viagens em grupo, agência de turismo Paraíba, Areia PB',
-  authors: [{ name: 'Live Tur' }],
+    'maratá tur, turismo, viagens, passeios, excursões, fretamento, transporte, turismo Rio Grande do Sul, Maratá RS',
+  authors: [{ name: 'Maratá Tur' }],
   creator: 'Pedro Riquelme',
   openGraph: {
     type: 'website',
     locale: 'pt_BR',
-    url: 'https://livetur.com.br',
-    siteName: 'Live Tur',
-    title: 'Live Tur — Agência de Turismo',
+    siteName: 'Maratá Tur',
+    title: 'Maratá Tur — Fretamento e Turismo',
     description:
-      'Cruzeiros, pacotes e excursões com conforto, segurança e experiências inesquecíveis. Realizamos sonhos desde 2004.',
-    images: [{ url: '/livetur.png', width: 1200, height: 630, alt: 'Live Tur' }],
+      'Passeios, viagens em grupo, transporte e fretamento com mais de 30 anos de experiência.',
+    images: [{ url: '/images/marata/trem-do-pampa.jpg', width: 1080, height: 1440, alt: 'Maratá Tur' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Live Tur — Agência de Turismo',
-    description: 'Descubra seus próximos destinos com a Live Tur.',
-    images: ['/livetur.png'],
+    title: 'Maratá Tur — Fretamento e Turismo',
+    description: 'Descubra os próximos passeios da Maratá Tur.',
+    images: ['/images/marata/trem-do-pampa.jpg'],
   },
   robots: 'index, follow',
-  metadataBase: new URL('https://livetur.com.br'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
 }
 
 export const viewport = {
-  themeColor: '#F97316',
+  themeColor: '#13233A',
   width: 'device-width',
   initialScale: 1,
 }

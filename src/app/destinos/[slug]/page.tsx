@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: `${destination.title}`,
     description: destination.description,
     openGraph: {
-      title: `${destination.title} — Live Tur`,
+      title: `${destination.title} — Maratá Tur`,
       description: destination.description,
       images: [destination.image],
     },
@@ -67,9 +67,8 @@ export default function DestinationPage({ params }: PageProps) {
               <h2 className="mb-6 text-3xl font-bold">Sobre {destination.title}</h2>
               <p className="mb-6 text-lg text-gray-600">{destination.description}</p>
               <p className="text-gray-600">
-                Fale com a Live Tur para conhecer as próximas saídas e condições de pagamento para{' '}
-                {destination.title}. Montamos o roteiro com hospedagem, passeios e acompanhamento da
-                nossa equipe.
+                Fale com a Maratá Tur para confirmar as próximas saídas, vagas e condições para{' '}
+                {destination.title}. Os detalhes de cada passeio são atualizados pelo WhatsApp.
               </p>
             </div>
 

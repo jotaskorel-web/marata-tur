@@ -16,19 +16,20 @@ const AUTOPLAY_MS = 6000
 function tripDateLabel(trip: Trip): string {
   if (trip.dateLabel) return trip.dateLabel
   if (!trip.startDate) return 'Consulte datas'
-  const start = new Date(trip.startDate).toLocaleDateString('pt-BR', {
+  const startDate = new Date(`${trip.startDate}T12:00:00`)
+  const start = startDate.toLocaleDateString('pt-BR', {
     day: '2-digit',
     month: 'short',
   })
   if (trip.endDate) {
-    const end = new Date(trip.endDate).toLocaleDateString('pt-BR', {
+    const end = new Date(`${trip.endDate}T12:00:00`).toLocaleDateString('pt-BR', {
       day: '2-digit',
       month: 'short',
       year: 'numeric',
     })
     return `${start} a ${end}`
   }
-  return new Date(trip.startDate).toLocaleDateString('pt-BR', {
+  return startDate.toLocaleDateString('pt-BR', {
     day: '2-digit',
     month: 'long',
     year: 'numeric',
@@ -68,7 +69,7 @@ export const PromotionsBannerSection: React.FC = () => {
       <SectionTitle
         eyebrow="Promoções"
         title="Ofertas para embarcar agora"
-        subtitle="Vagas limitadas nos pacotes mais procurados da Live Tur. Reserve pelo site ou pelo WhatsApp."
+        subtitle="Datas, roteiros e valores publicados pela Maratá Tur. Confirme a disponibilidade pelo WhatsApp."
       />
 
       <Reveal>
@@ -130,6 +131,7 @@ export const PromotionsBannerSection: React.FC = () => {
                           <span className="ml-1 text-base font-medium text-white">/pessoa</span>
                         )}
                       </p>
+                      {trip.priceLabel && <p className="text-sm font-medium text-white">{trip.priceLabel}</p>}
                       {trip.installments && trip.installmentValue && (
                         <p className="text-sm font-medium text-white">
                           ou {trip.installments}x de {formatBRL(trip.installmentValue)}

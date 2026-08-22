@@ -67,7 +67,7 @@ export default function BlogPostPage({ params }: PageProps) {
               </span>
               <span className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
-                {new Date(post.date).toLocaleDateString('pt-BR')}
+                {new Date(`${post.date}T12:00:00`).toLocaleDateString('pt-BR')}
               </span>
               <span className="flex items-center gap-2">
                 <Clock className="h-4 w-4" />
@@ -87,7 +87,7 @@ export default function BlogPostPage({ params }: PageProps) {
             <div className="mt-12 rounded-xl bg-gray-50 p-8">
               <h3 className="mb-3 text-2xl font-bold">Quer viver essa experiência?</h3>
               <p className="mb-6 text-gray-600">
-                Fale com a Live Tur e descubra as próximas saídas para esse e outros destinos.
+                Fale com a Maratá Tur e descubra as próximas saídas para esse e outros destinos.
               </p>
               <a
                 href={generateWhatsAppLink(WHATSAPP_MESSAGES.general)}

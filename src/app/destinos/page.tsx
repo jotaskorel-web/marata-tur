@@ -13,7 +13,7 @@ import { ArrowRight } from 'lucide-react'
 export const metadata: Metadata = {
   title: 'Destinos',
   description:
-    'Explore todos os destinos da Live Tur — do litoral brasileiro às serras de MG e SP e ao exterior. Viagens nacionais e internacionais.',
+    'Explore os destinos dos passeios e viagens em grupo divulgados pela Maratá Tur.',
 }
 
 export default function DestinosPage() {
@@ -25,7 +25,7 @@ export default function DestinosPage() {
           <Breadcrumb className="mb-6" items={[{ label: 'Início', href: '/' }, { label: 'Destinos' }]} />
           <SectionTitle
             eyebrow="Nossos destinos"
-            title="Para onde a Live Tur pode te levar"
+            title="Para onde a Maratá Tur pode te levar"
             subtitle="Destinos reais dos nossos roteiros — escolha o seu e fale com a gente."
           />
 

@@ -1,27 +1,24 @@
-// Configuração central de contato da Live Tur.
+// Configuração central de contato da Maratá Tur.
 // Todos os CTAs de WhatsApp do site devem usar generateWhatsAppLink() daqui —
 // nunca espalhar números soltos pelos componentes.
 
 export const CONTACT = {
-  // Números reais divulgados no Instagram @live.tur
-  whatsappPrimary: '5583991577779', // (83) 99157-7779
-  whatsappSecondary: '5583991144230', // (83) 99114-4230
-  phoneDisplay: '(83) 99157-7779',
-  phoneSecondaryDisplay: '(83) 99114-4230',
-  instagram: '@live.tur',
-  instagramUrl: 'https://www.instagram.com/live.tur',
-  email: 'contato@livetur.com.br',
+  // Números divulgados nas publicações e na bio pública do Instagram @marata_tur
+  whatsappPrimary: '5551999279029', // (51) 99927-9029
+  whatsappSecondary: '5551993360513', // (51) 99336-0513
+  phoneDisplay: '(51) 99927-9029',
+  phoneSecondaryDisplay: '(51) 99336-0513',
+  instagram: '@marata_tur',
+  instagramUrl: 'https://www.instagram.com/marata_tur/',
   address: {
-    city: 'Areia',
-    state: 'PB',
+    city: 'Maratá',
+    state: 'RS',
     country: 'Brasil',
   },
   // Cidades de saída recorrentes das excursões
-  departureCities: ['Areia', 'Alagoa Grande', 'João Pessoa', 'Recife', 'Rio de Janeiro'],
+  departureCities: ['Maratá', 'Brochier', 'Montenegro'],
   businessHours: {
-    weekday: '08:00 - 18:00',
-    saturday: '08:00 - 12:00',
-    sunday: 'Fechado',
+    note: 'Consulte a disponibilidade pelo WhatsApp',
   },
 } as const
 
@@ -39,18 +36,18 @@ export const generateWhatsAppLink = (
 
 // Mensagens contextualizadas por origem — ajudam a rastrear de onde vem o lead.
 export const WHATSAPP_MESSAGES = {
-  hero: 'Olá! Conheci a Live Tur pelo site e gostaria de conhecer os pacotes e próximas viagens.',
-  general: 'Olá! Conheci a Live Tur pelo site e gostaria de informações sobre os serviços.',
+  hero: 'Olá! Conheci a Maratá Tur pelo site e gostaria de conhecer os passeios e próximas viagens.',
+  general: 'Olá! Conheci a Maratá Tur pelo site e gostaria de informações sobre os serviços.',
   quotation:
-    'Olá! Gostaria de solicitar um orçamento de viagem com a Live Tur.',
+    'Olá! Gostaria de solicitar um orçamento de fretamento ou viagem com a Maratá Tur.',
   destination: (destination: string) =>
-    `Olá! Estava vendo o destino ${destination} no site da Live Tur e gostaria de mais informações.`,
+    `Olá! Estava vendo o destino ${destination} no site da Maratá Tur e gostaria de mais informações.`,
   trip: (destination: string, date?: string) =>
-    `Olá! Vi no site da Live Tur a viagem para ${destination}${
+    `Olá! Vi no site da Maratá Tur a viagem para ${destination}${
       date ? ` (${date})` : ''
     } e gostaria de receber mais informações.`,
   tripReserve: (title: string) =>
-    `Olá! Vi no site da Live Tur a viagem "${title}" e gostaria de reservar / receber mais informações.`,
+    `Olá! Vi no site da Maratá Tur a viagem "${title}" e gostaria de reservar ou receber mais informações.`,
 }
 
 /** Formata um valor em reais no padrão brasileiro. */

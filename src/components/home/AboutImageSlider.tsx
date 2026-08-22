@@ -5,12 +5,12 @@ import Image from 'next/image'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 const SLIDES = [
-  { src: '/images/cities/natal.jpg', alt: 'Natal — Ponta Negra e Morro do Careca' },
-  { src: '/images/cities/rio-de-janeiro.jpg', alt: 'Rio de Janeiro — Copacabana e Pão de Açúcar' },
-  { src: '/images/cities/porto-de-galinhas.jpg', alt: 'Porto de Galinhas, Pernambuco' },
-  { src: '/images/cities/campos-do-jordao.jpg', alt: 'Campos do Jordão, Serra da Mantiqueira' },
-  { src: '/images/cities/bariloche.jpg', alt: 'Bariloche, Argentina' },
-  { src: '/images/cities/belo-horizonte.jpg', alt: 'Belo Horizonte, Minas Gerais' },
+  { src: '/images/marata/cambara-do-sul.jpg', alt: 'Grupo da Maratá Tur em Cambará do Sul' },
+  { src: '/images/marata/trem-do-pampa-experiencia.jpg', alt: 'Grupo da Maratá Tur em passeio pela Serra Gaúcha' },
+  { src: '/images/marata/lumni-gramado.jpg', alt: 'Lumni Experience em Gramado' },
+  { src: '/images/marata/rota-das-lavandas.jpg', alt: 'Rota das Lavandas em Morro Reuter' },
+  { src: '/images/marata/trem-do-pampa.jpg', alt: 'Trem do Pampa e Rivera' },
+  { src: '/images/marata/grand-suites-ita.jpg', alt: 'Grand Suites Family Resort em Itá' },
 ]
 
 const AUTOPLAY_MS = 5000
@@ -39,7 +39,7 @@ export const AboutImageSlider: React.FC = () => {
       onFocusCapture={() => setPaused(true)}
       onBlurCapture={() => setPaused(false)}
       aria-roledescription="carrossel"
-      aria-label="Fotos das viagens da Live Tur"
+      aria-label="Fotos das viagens da Maratá Tur"
     >
       <div
         className="flex h-[420px] transition-transform duration-500 ease-out motion-reduce:transition-none"

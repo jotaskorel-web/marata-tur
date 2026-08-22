@@ -6,7 +6,6 @@ import { TripsSection } from '@/components/home/TripsSection'
 import { ExperienceTypesSection } from '@/components/home/ExperienceTypesSection'
 import { AboutSection } from '@/components/home/AboutSection'
 import { BenefitsSection } from '@/components/home/BenefitsSection'
-import { TestimonialsSection } from '@/components/home/TestimonialsSection'
 import { InstagramSection } from '@/components/home/InstagramSection'
 import { CTASection } from '@/components/home/CTASection'
 import { Header } from '@/components/layout/Header'
@@ -24,7 +23,6 @@ export default function Home() {
       <ExperienceTypesSection />
       <AboutSection />
       <BenefitsSection />
-      <TestimonialsSection />
       <InstagramSection />
       <CTASection />
       <Footer />

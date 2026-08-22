@@ -10,8 +10,8 @@ export const CTASection: React.FC = () => {
   return (
     <section className="relative flex min-h-[680px] items-center overflow-hidden md:min-h-[780px]">
       <Image
-        src="/images/cities/iguazu.jpg"
-        alt="Cataratas do Iguaçu"
+        src="/images/marata/cambara-do-sul.jpg"
+        alt="Viajantes da Maratá Tur em Cambará do Sul"
         fill
         sizes="100vw"
         className="object-cover"
@@ -26,7 +26,7 @@ export const CTASection: React.FC = () => {
         </Reveal>
         <Reveal delay={0.1}>
           <p className="mx-auto mb-10 max-w-2xl text-lg text-gray-100">
-            Escolha seu destino e comece a planejar a viagem dos seus sonhos com a Live Tur.
+            Escolha um passeio ou solicite seu fretamento diretamente com a equipe da Maratá Tur.
           </p>
         </Reveal>
 

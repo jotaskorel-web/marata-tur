@@ -2,7 +2,7 @@ import type { MetadataRoute } from 'next'
 import { destinations, trips, blogPosts } from '@/data'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://livetur.com.br'
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'
 
   // Main pages
   const mainPages: MetadataRoute.Sitemap = [

@@ -10,16 +10,16 @@ import { generateWhatsAppLink, WHATSAPP_MESSAGES } from '@/config/contact'
 import { MessageCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Sobre nós — a história da Live Tur',
+  title: 'Sobre nós — a história da Maratá Tur',
   description:
-    'Conheça a Live Tur: agência de turismo que realiza sonhos desde 2004, com atendimento personalizado e acompanhamento em cada viagem.',
+    'Conheça a Maratá Tur: mais de 30 anos de experiência em fretamento, transporte, passeios e turismo nacional.',
 }
 
 const stats = [
-  { value: '2004', label: 'Realizando sonhos desde' },
-  { value: 'Nac. + Int.', label: 'Destinos que operamos' },
-  { value: '5', label: 'Cidades de saída' },
-  { value: '@live.tur', label: 'Acompanhe no Instagram' },
+  { value: '+30 anos', label: 'Conectando pessoas e destinos' },
+  { value: '131+', label: 'Publicações no Instagram' },
+  { value: '3', label: 'Cidades de embarque recorrente' },
+  { value: '@marata_tur', label: 'Acompanhe no Instagram' },
 ]
 
 export default function SobrePage() {
@@ -29,16 +29,16 @@ export default function SobrePage() {
       <main>
         {/* Hero */}
         <section className="relative mt-16 h-[360px] w-full md:h-[440px]">
-          <Image src="/images/gallery/paisagem.jpg" alt="Viagens Live Tur" fill priority sizes="100vw" className="object-cover" />
+          <Image src="/images/marata/cambara-do-sul.jpg" alt="Viagens Maratá Tur" fill priority sizes="100vw" className="object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/40" />
           <Container className="relative z-10 flex h-full flex-col justify-end pb-10">
             <Breadcrumb
               className="mb-4 [&_*]:text-gray-200"
               items={[{ label: 'Início', href: '/' }, { label: 'Sobre nós' }]}
             />
-            <p className="mb-2 text-sm font-semibold uppercase tracking-wider text-gray-200">Sobre a Live Tur</p>
+            <p className="mb-2 text-sm font-semibold uppercase tracking-wider text-gray-200">Sobre a Maratá Tur</p>
             <h1 className="max-w-2xl text-3xl font-bold text-white md:text-5xl">
-              Realizamos sonhos desde 2004
+              Mais de 30 anos na estrada
             </h1>
           </Container>
         </section>
@@ -47,7 +47,7 @@ export default function SobrePage() {
           <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
             <Reveal>
               <div className="relative h-[420px] w-full overflow-hidden rounded-xl">
-                <Image src="/images/gallery/bariloche.jpg" alt="Grupo de viajantes Live Tur" fill sizes="(max-width:768px) 100vw, 50vw" className="object-cover" />
+                <Image src="/images/marata/logo-marata-tur.jpg" alt="Ônibus da Maratá Tur" fill sizes="(max-width:768px) 100vw, 50vw" className="object-cover" />
               </div>
             </Reveal>
 
@@ -56,18 +56,16 @@ export default function SobrePage() {
                 <h2 className="mb-6 text-3xl font-bold">Nossa história</h2>
                 <div className="space-y-4 text-lg text-gray-600">
                   <p>
-                    A Live Tur nasceu do propósito de transformar sonhos em viagens inesquecíveis.
-                    Desde 2004, planejamos cada roteiro com carinho, dedicação e compromisso —
-                    porque acreditamos que viajar é colecionar momentos que o tempo jamais apaga.
+                    A Maratá Tur atua há mais de 30 anos conectando pessoas com destinos. A empresa
+                    reúne experiência em transporte rodoviário, fretamento e turismo nacional.
                   </p>
                   <p>
-                    Trabalhamos com cruzeiros, pacotes nacionais e internacionais, excursões
-                    regionais e viagens religiosas, sempre com atendimento personalizado e
-                    acompanhamento da nossa equipe do início ao fim.
+                    Os passeios divulgados combinam ônibus de turismo, guias credenciados,
+                    experiências regionais, hospedagem e gastronomia, conforme cada roteiro.
                   </p>
                   <p>
-                    Nosso destino é a sua melhor viagem. Ver nossos clientes felizes é a certeza de
-                    que estamos no caminho certo.
+                    Maratá, Brochier e Montenegro aparecem como pontos recorrentes de embarque,
+                    facilitando a participação de viajantes da região.
                   </p>
                 </div>
               </div>
@@ -91,7 +89,7 @@ export default function SobrePage() {
           <div className="rounded-2xl bg-orange-500 px-8 py-12 text-center text-white">
             <h2 className="mb-3 text-2xl font-bold md:text-3xl">Vamos viajar juntos?</h2>
             <p className="mx-auto mb-6 max-w-xl text-gray-100">
-              Fale com a nossa equipe e comece a planejar a sua próxima experiência com a Live Tur.
+              Fale com a nossa equipe e comece a planejar a sua próxima experiência com a Maratá Tur.
             </p>
             <a
               href={generateWhatsAppLink(WHATSAPP_MESSAGES.general)}

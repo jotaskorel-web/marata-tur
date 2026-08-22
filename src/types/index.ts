@@ -1,4 +1,4 @@
-// Type definitions for the LiveTur application
+// Type definitions for the Maratá Tur application
 
 export interface Destination {
   id: string
@@ -45,6 +45,7 @@ export interface Trip {
   description: string
   highlights?: string[]
   included?: string[]
+  notIncluded?: string[]
   itinerary?: ItineraryDay[]
   category: TripCategory
   featured: boolean
@@ -59,6 +60,12 @@ export interface Trip {
   /** Entrada / sinal (R$) */
   entryValue?: number
   perPerson?: boolean
+  /** Contexto do valor principal, como "adulto" ou "apartamento duplo" */
+  priceLabel?: string
+  /** Demais faixas de preço divulgadas na publicação oficial */
+  priceDetails?: string[]
+  /** Link para a publicação original no Instagram */
+  sourceUrl?: string
   /** Marca promoção relâmpago / vagas limitadas */
   promo?: boolean
 }

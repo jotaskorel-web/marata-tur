@@ -1,9 +1,9 @@
 import React from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
 import { Instagram, MapPin, Phone } from 'lucide-react'
 import { Container } from '@/components/ui/Layout'
 import { CONTACT, generateWhatsAppLink, WHATSAPP_MESSAGES } from '@/config/contact'
+import { BrandLogo } from '@/components/ui/BrandLogo'
 
 const currentYear = new Date().getFullYear()
 
@@ -18,11 +18,11 @@ const navLinks = [
 ]
 
 const destinationLinks = [
-  { label: 'Natal (RN)', href: '/destinos/natal' },
-  { label: 'Rio de Janeiro (RJ)', href: '/destinos/rio-de-janeiro' },
-  { label: 'Porto de Galinhas (PE)', href: '/destinos/porto-de-galinhas' },
-  { label: 'Serras de MG e SP', href: '/destinos/campos-do-jordao' },
-  { label: 'Bariloche (Argentina)', href: '/destinos/bariloche' },
+  { label: 'Gramado e Nova Petrópolis', href: '/destinos/gramado-e-nova-petropolis' },
+  { label: 'Termas Romanas', href: '/destinos/restinga-seca' },
+  { label: 'Trem do Pampa e Rivera', href: '/destinos/santana-do-livramento' },
+  { label: 'Rota das Lavandas', href: '/destinos/morro-reuter' },
+  { label: 'Itá (SC)', href: '/destinos/ita' },
 ]
 
 export const Footer: React.FC = () => {
@@ -33,19 +33,17 @@ export const Footer: React.FC = () => {
           <div className="grid grid-cols-1 gap-8 text-center md:grid-cols-2 md:text-left lg:grid-cols-4">
             {/* Marca */}
             <div>
-              <div className="relative mx-auto mb-4 h-12 w-32 md:mx-0">
-                <Image src="/livetur.png" alt="Live Tur" fill sizes="128px" className="object-contain object-center md:object-left" />
-              </div>
+              <BrandLogo light className="mb-5" />
               <p className="mb-4 text-gray-400">
-                Realizamos sonhos desde 2004. Cruzeiros, pacotes nacionais e internacionais e
-                excursões com atendimento personalizado.
+                Há mais de 30 anos conectando pessoas com destinos por meio de fretamento,
+                transporte e turismo nacional.
               </p>
               <a
                 href={CONTACT.instagramUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-gray-800 text-gray-300 transition-colors hover:bg-orange-500 hover:text-white"
-                aria-label="Instagram da Live Tur"
+                aria-label="Instagram da Maratá Tur"
               >
                 <Instagram className="h-5 w-5" />
               </a>
@@ -118,7 +116,7 @@ export const Footer: React.FC = () => {
 
       <Container className="py-8">
         <div className="flex flex-col items-center justify-between gap-4 text-sm text-gray-400 md:flex-row">
-          <p>&copy; {currentYear} Live Tur. Todos os direitos reservados.</p>
+          <p>&copy; {currentYear} Maratá Tur. Todos os direitos reservados.</p>
           <div className="flex gap-6">
             <Link href="/privacidade" className="hover:text-orange-500">
               Política de Privacidade
