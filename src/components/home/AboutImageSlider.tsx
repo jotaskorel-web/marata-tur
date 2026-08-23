@@ -5,12 +5,13 @@ import Image from 'next/image'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 const SLIDES = [
+  { src: '/images/destinations/cambara-itaimbezinho.jpg', alt: 'Cânion Itaimbezinho em Cambará do Sul' },
+  { src: '/images/destinations/gramado-lago-negro.jpg', alt: 'Lago Negro em Gramado' },
+  { src: '/images/destinations/lavandas.jpg', alt: 'Campo de lavandas' },
+  { src: '/images/destinations/ita-torres.jpg', alt: 'Torres da antiga igreja de Itá' },
+  { src: '/images/destinations/santana-livramento-rivera.jpg', alt: 'Sant’Ana do Livramento na fronteira com Rivera' },
   { src: '/images/marata/cambara-do-sul.jpg', alt: 'Grupo da Maratá Tur em Cambará do Sul' },
   { src: '/images/marata/trem-do-pampa-experiencia.jpg', alt: 'Grupo da Maratá Tur em passeio pela Serra Gaúcha' },
-  { src: '/images/marata/lumni-gramado.jpg', alt: 'Lumni Experience em Gramado' },
-  { src: '/images/marata/rota-das-lavandas.jpg', alt: 'Rota das Lavandas em Morro Reuter' },
-  { src: '/images/marata/trem-do-pampa.jpg', alt: 'Trem do Pampa e Rivera' },
-  { src: '/images/marata/grand-suites-ita.jpg', alt: 'Grand Suites Family Resort em Itá' },
 ]
 
 const AUTOPLAY_MS = 5000

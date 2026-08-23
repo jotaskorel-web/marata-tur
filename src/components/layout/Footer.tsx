@@ -124,6 +124,9 @@ export const Footer: React.FC = () => {
             <Link href="/termos" className="hover:text-orange-500">
               Termos de Uso
             </Link>
+            <Link href="/creditos-imagens" className="hover:text-orange-500">
+              Créditos das imagens
+            </Link>
           </div>
           <p>
             Desenvolvido por{' '}

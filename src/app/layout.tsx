@@ -34,13 +34,13 @@ export const metadata: Metadata = {
     title: 'Maratá Tur — Fretamento e Turismo',
     description:
       'Passeios, viagens em grupo, transporte e fretamento com mais de 30 anos de experiência.',
-    images: [{ url: '/images/marata/trem-do-pampa.jpg', width: 1080, height: 1440, alt: 'Maratá Tur' }],
+    images: [{ url: '/images/destinations/cambara-itaimbezinho.jpg', width: 1920, height: 1080, alt: 'Cânion Itaimbezinho — Maratá Tur' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Maratá Tur — Fretamento e Turismo',
     description: 'Descubra os próximos passeios da Maratá Tur.',
-    images: ['/images/marata/trem-do-pampa.jpg'],
+    images: ['/images/destinations/cambara-itaimbezinho.jpg'],
   },
   robots: 'index, follow',
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),

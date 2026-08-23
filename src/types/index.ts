@@ -41,6 +41,8 @@ export interface Trip {
   dateLabel?: string
   duration: string
   image: string
+  /** Arte oficial da oferta, usada em banners promocionais quando diferente da capa */
+  posterImage?: string
   gallery?: string[]
   description: string
   highlights?: string[]

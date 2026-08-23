@@ -10,8 +10,8 @@ export const CTASection: React.FC = () => {
   return (
     <section className="relative flex min-h-[680px] items-center overflow-hidden md:min-h-[780px]">
       <Image
-        src="/images/marata/cambara-do-sul.jpg"
-        alt="Viajantes da Maratá Tur em Cambará do Sul"
+        src="/images/destinations/ita-torres.jpg"
+        alt="Torres da antiga igreja de Itá, em Santa Catarina"
         fill
         sizes="100vw"
         className="object-cover"

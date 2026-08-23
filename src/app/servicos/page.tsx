@@ -27,14 +27,14 @@ const services = [
   {
     icon: MapPin,
     title: 'Passeios de um dia',
-    image: '/images/marata/rota-das-lavandas.jpg',
+    image: '/images/destinations/lavandas.jpg',
     description:
       'Bate-voltas com roteiro organizado, transporte, guia e experiências gastronômicas ou culturais.',
   },
   {
     icon: Hotel,
     title: 'Viagens com hospedagem',
-    image: '/images/marata/trem-do-pampa.jpg',
+    image: '/images/destinations/santana-livramento-rivera.jpg',
     description:
       'Roteiros de mais dias com hotel, café da manhã e programação organizada conforme o pacote.',
   },
@@ -55,7 +55,7 @@ const services = [
   {
     icon: CalendarDays,
     title: 'Termas e resorts',
-    image: '/images/marata/grand-suites-ita.jpg',
+    image: '/images/destinations/ita-torres.jpg',
     description:
       'Hospedagem com lazer, piscinas, refeições e opções all inclusive em viagens selecionadas.',
   },

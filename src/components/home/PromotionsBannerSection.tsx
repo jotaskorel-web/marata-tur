@@ -98,8 +98,8 @@ export const PromotionsBannerSection: React.FC = () => {
                 aria-label={`${i + 1} de ${promos.length}: ${trip.title}`}
               >
                 <Image
-                  src={trip.image}
-                  alt={`Vista de ${trip.destination} — ${trip.title}`}
+                  src={trip.posterImage ?? trip.image}
+                  alt={trip.posterImage ? `Arte oficial — ${trip.title}` : `Vista de ${trip.destination} — ${trip.title}`}
                   fill
                   sizes="100vw"
                   className="z-0 object-cover"

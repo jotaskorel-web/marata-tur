@@ -6,10 +6,10 @@ import { Reveal } from '@/components/ui/Reveal'
 
 // Tipos de experiências divulgados pela Maratá Tur
 const experienceTypes = [
-  { id: '1', title: 'Passeios de um dia', description: 'Cultura, gastronomia e natureza', image: '/images/marata/rota-das-lavandas.jpg' },
+  { id: '1', title: 'Passeios de um dia', description: 'Cultura, gastronomia e natureza', image: '/images/destinations/lavandas.jpg' },
   { id: '2', title: 'Termas e resorts', description: 'Hospedagem, lazer e pensão completa', image: '/images/marata/termas-romanas.jpg' },
-  { id: '3', title: 'Experiências regionais', description: 'Roteiros especiais pelo Sul do Brasil', image: '/images/marata/percorsi-anta-gorda.jpg' },
-  { id: '4', title: 'Viagens em grupo', description: 'Novos lugares e boas companhias', image: '/images/marata/cambara-do-sul.jpg' },
+  { id: '3', title: 'Experiências regionais', description: 'Roteiros especiais pelo Sul do Brasil', image: '/images/destinations/gramado-lago-negro.jpg' },
+  { id: '4', title: 'Viagens em grupo', description: 'Novos lugares e boas companhias', image: '/images/destinations/cambara-itaimbezinho.jpg' },
   { id: '5', title: 'Transporte para eventos', description: 'Shows, feiras e eventos', image: '/images/marata/universo-alegria.jpg' },
   { id: '6', title: 'Fretamento', description: 'Transporte para seu grupo ou empresa', image: '/images/marata/logo-marata-tur.jpg' },
 ]

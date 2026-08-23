@@ -36,8 +36,8 @@ export const HeroSection: React.FC = () => {
         transition={{ duration: 1.4, ease: [0.22, 1, 0.36, 1] }}
       >
         <Image
-          src="/images/marata/cambara-do-sul.jpg"
-          alt="Grupo da Maratá Tur em Cambará do Sul"
+          src="/images/destinations/cambara-itaimbezinho.jpg"
+          alt="Cânion Itaimbezinho em Cambará do Sul"
           fill
           priority
           sizes="100vw"

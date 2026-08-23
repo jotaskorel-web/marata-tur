@@ -29,7 +29,7 @@ export default function SobrePage() {
       <main>
         {/* Hero */}
         <section className="relative mt-16 h-[360px] w-full md:h-[440px]">
-          <Image src="/images/marata/cambara-do-sul.jpg" alt="Viagens Maratá Tur" fill priority sizes="100vw" className="object-cover" />
+          <Image src="/images/destinations/cambara-itaimbezinho.jpg" alt="Cânion Itaimbezinho em Cambará do Sul" fill priority sizes="100vw" className="object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/40" />
           <Container className="relative z-10 flex h-full flex-col justify-end pb-10">
             <Breadcrumb
@@ -47,7 +47,7 @@ export default function SobrePage() {
           <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
             <Reveal>
               <div className="relative h-[420px] w-full overflow-hidden rounded-xl">
-                <Image src="/images/marata/logo-marata-tur.jpg" alt="Ônibus da Maratá Tur" fill sizes="(max-width:768px) 100vw, 50vw" className="object-cover" />
+                <Image src="/images/marata/cambara-do-sul.jpg" alt="Grupo da Maratá Tur em Cambará do Sul" fill sizes="(max-width:768px) 100vw, 50vw" className="object-cover" />
               </div>
             </Reveal>
 
