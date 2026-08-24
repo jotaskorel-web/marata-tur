@@ -52,7 +52,7 @@ export const destinations: Destination[] = [
     country: 'Brasil',
     description:
       'Campos de lavanda, café colonial, arte ao ar livre e natureza em um passeio de um dia pela Rota Romântica.',
-    image: '/images/destinations/lavandas.jpg',
+    image: '/images/marata/rota-das-lavandas.jpg',
     featured: true,
     region: 'Rota Romântica',
   },
@@ -201,7 +201,7 @@ export const trips: Trip[] = [
     departureCities: ['Maratá', 'Brochier', 'Montenegro'],
     startDate: '2026-09-20',
     duration: '1 dia',
-    image: '/images/destinations/lavandas.jpg',
+    image: '/images/marata/rota-das-lavandas.jpg',
     posterImage: '/images/marata/rota-das-lavandas.jpg',
     description:
       'Um dia de paisagens, sabores e arte pela Rota das Lavandas, com café colonial e visitas em Morro Reuter e Picada Café.',
@@ -253,7 +253,7 @@ export const trips: Trip[] = [
     departureCities: ['Maratá', 'Brochier', 'Montenegro'],
     startDate: '2026-10-03',
     duration: '1 dia',
-    image: '/images/destinations/gramado-lago-negro.jpg',
+    image: '/images/marata/lumni-gramado.jpg',
     posterImage: '/images/marata/lumni-gramado.jpg',
     description:
       'Uma tarde e noite na Serra Gaúcha com Praça das Flores, tempo livre em Gramado, sequência de fondue e parque de luzes.',
@@ -281,7 +281,7 @@ export const trips: Trip[] = [
     startDate: '2026-11-06',
     endDate: '2026-11-08',
     duration: '3 dias / 1 pernoite',
-    image: '/images/destinations/santana-livramento-rivera.jpg',
+    image: '/images/marata/trem-do-pampa.jpg',
     posterImage: '/images/marata/trem-do-pampa.jpg',
     gallery: ['/images/marata/trem-do-pampa-experiencia.jpg', '/images/marata/trem-do-pampa.jpg'],
     description:
@@ -332,7 +332,7 @@ export const trips: Trip[] = [
     startDate: '',
     dateLabel: '26 a 28 de janeiro — confirme o ano',
     duration: '3 dias / 2 noites',
-    image: '/images/destinations/ita-torres.jpg',
+    image: '/images/marata/grand-suites-ita.jpg',
     posterImage: '/images/marata/grand-suites-ita.jpg',
     description:
       'Verão em Itá com hospedagem all inclusive, piscinas aquecidas, recreação e bebidas liberadas 24 horas em autoatendimento.',
