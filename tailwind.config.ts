@@ -10,19 +10,20 @@ const config: Config = {
     extend: {
       colors: {
         orange: {
-          500: '#C97808',
-          600: '#A85F05',
+          500: '#C9A227',
+          600: '#A8861F',
         },
         blue: {
-          800: '#17304F',
-          900: '#13233A',
-          950: '#0B1626',
+          800: '#1B4F82',
+          900: '#16426E',
+          950: '#0F2D4A',
         },
         brand: {
-          primary: '#13233A',
-          secondary: '#C97808',
-          accent: '#F0A928',
-          light: '#F5F5F5',
+          primary: '#1B4F82',
+          secondary: '#C9A227',
+          accent: '#E4C056',
+          light: '#F3F1EC',
+          mist: '#E8EEF3',
           border: '#E0E0E0',
         },
       },
