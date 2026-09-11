@@ -15,18 +15,18 @@ export const AboutSection: React.FC = () => {
         <Reveal delay={0.1}>
           <div className="text-center md:text-left">
             <p className="mb-2 text-sm font-semibold uppercase tracking-wider text-orange-500">
-              Sobre a Maratá Tur
+              Sobre a Luzy Tour
             </p>
-            <h2 className="mb-6 text-3xl font-bold md:text-4xl">Mais de 30 anos na estrada</h2>
+            <h2 className="mb-6 text-3xl font-bold md:text-4xl">Viajar é preciso</h2>
 
             <p className="mb-4 text-lg text-gray-600">
-              A Maratá Tur conecta pessoas com destinos há mais de três décadas, unindo experiência
-              em transporte, fretamento e turismo nacional a um atendimento próximo.
+              A Luzy Tour é uma agência de excursões de Salvador que leva grupos à Chapada
+              Diamantina, ao litoral baiano, a Maragogi, Natal e até à neve no Chile.
             </p>
 
             <p className="mb-8 text-lg text-gray-600">
-              Organizamos passeios em grupo, viagens rodoviárias e transporte para eventos, com
-              ônibus de turismo, guias credenciados e pontos de embarque em Maratá e região.
+              Trabalhamos com ônibus executivo, coordenador de grupo, Cadastur e saídas de
+              Salvador, Camaçari, Feira de Santana, Santo Estevão e Dias d&apos;Ávila.
             </p>
 
             <a

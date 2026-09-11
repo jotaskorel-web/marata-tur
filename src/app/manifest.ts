@@ -2,20 +2,20 @@ import type { MetadataRoute } from 'next'
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Maratá Tur - Fretamento e Turismo',
-    short_name: 'Maratá Tur',
+    name: 'Luzy Tour - Excursões e Turismo',
+    short_name: 'Luzy Tour',
     description:
-      'Fretamento, transporte, passeios e turismo nacional',
+      'Excursões, bate-voltas e passeio de escuna saindo de Salvador',
     start_url: '/',
     scope: '/',
     display: 'standalone',
     background_color: '#ffffff',
-    theme_color: '#13233A',
+    theme_color: '#1B4F82',
     icons: [
       {
-        src: '/icon.svg',
-        sizes: 'any',
-        type: 'image/svg+xml',
+        src: '/images/brand/luzy-tour-icon.png',
+        sizes: '512x512',
+        type: 'image/png',
       },
     ],
   }

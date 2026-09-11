@@ -4,7 +4,7 @@ import { Card } from '@/components/ui/Card'
 import { Reveal } from '@/components/ui/Reveal'
 import { ClipboardCheck, HeartHandshake, CreditCard, Users, Map, Bus } from 'lucide-react'
 
-// Diferenciais identificados nas publicações públicas da Maratá Tur
+// Diferenciais identificados nas publicações públicas da Luzy Tour
 const benefits = [
   {
     id: '1',
@@ -16,19 +16,19 @@ const benefits = [
     id: '2',
     icon: HeartHandshake,
     title: 'Atendimento personalizado',
-    description: 'Contato direto com a equipe pelos dois canais oficiais de WhatsApp.',
+    description: 'Atendimento humanizado pelo WhatsApp, com reservas e dúvidas no mesmo canal.',
   },
   {
     id: '3',
     icon: CreditCard,
-    title: 'Transporte confortável',
-    description: 'Ônibus de turismo e, em roteiros selecionados, veículos semi-leito climatizados.',
+    title: 'Ônibus executivo',
+    description: 'Transporte executivo completo, pulseira de identificação e translado aos passeios.',
   },
   {
     id: '4',
     icon: Users,
-    title: 'Acompanhamento na viagem',
-    description: 'Guias Cadastur acompanham os grupos nos roteiros divulgados.',
+    title: 'Cadastur e coordenador',
+    description: 'Agência cadastrada e coordenador de grupo em todas as excursões divulgadas.',
   },
   {
     id: '5',
@@ -39,17 +39,17 @@ const benefits = [
   {
     id: '6',
     icon: Bus,
-    title: 'Saídas de várias cidades',
-    description: 'Embarques recorrentes em Maratá, Brochier e Montenegro.',
+    title: 'Saídas de Salvador e região',
+    description: 'Embarques em Salvador, Camaçari, Feira de Santana, Santo Estevão e Dias d’Ávila.',
   },
 ]
 
 export const BenefitsSection: React.FC = () => {
   return (
-    <Section className="bg-gray-50">
+    <Section className="bg-[#1B4F82]/[0.045]">
       <SectionTitle
-        eyebrow="Por que a Maratá Tur"
-        title="Por que viajar com a Maratá Tur?"
+        eyebrow="Por que a Luzy Tour"
+        title="Por que viajar com a Luzy Tour?"
         subtitle="Os diferenciais que fazem cada viagem valer a pena."
       />
 

@@ -58,7 +58,7 @@ export const ImagePlaceholder: React.FC<ImageProps> = ({
   }
 
   return (
-    <div className={clsx('relative w-full overflow-hidden', aspectRatioClasses[aspectRatio])}>
+    <div className={clsx('relative w-full overflow-hidden bg-gray-100', aspectRatioClasses[aspectRatio])}>
       <Image
         src={src}
         alt={alt}

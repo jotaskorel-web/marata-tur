@@ -24,20 +24,20 @@ const TAB_LABELS: Record<SearchTab, string> = {
 
 const PLACEHOLDERS: Record<SearchTab, { destination: string; departure: string }> = {
   passeios: {
-    destination: 'Ex.: Gramado, Termas Romanas, Rivera...',
-    departure: 'Ex.: Maratá, Brochier, Montenegro',
+    destination: 'Ex.: Chapada Diamantina, Itacaré, Maragogi...',
+    departure: 'Ex.: Salvador, Camaçari, Feira de Santana',
   },
   fretamento: {
     destination: 'Conte o destino ou tipo de evento',
     departure: 'Cidade de saída',
   },
   eventos: {
-    destination: 'Ex.: show, feira, evento corporativo...',
-    departure: 'Ex.: Maratá, Brochier, Montenegro',
+    destination: 'Ex.: show, feriado, evento em grupo...',
+    departure: 'Ex.: Salvador, Camaçari, Dias d’Ávila',
   },
   destinos: {
-    destination: 'Ex.: Serra Gaúcha, Itá, Rivera...',
-    departure: 'Ex.: Maratá, Brochier, Montenegro',
+    destination: 'Ex.: Chapada, Natal, Chile, Foz do Iguaçu...',
+    departure: 'Ex.: Salvador, Camaçari, Feira de Santana',
   },
 }
 

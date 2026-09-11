@@ -1,4 +1,4 @@
-// Type definitions for the Maratá Tur application
+// Type definitions for the Luzy Tour application
 
 export interface Destination {
   id: string

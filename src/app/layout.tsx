@@ -18,36 +18,36 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Maratá Tur — Fretamento, Transporte e Turismo',
-    template: '%s | Maratá Tur',
+    default: 'Luzy Tour — Excursões, Bate-voltas e Turismo em Salvador',
+    template: '%s | Luzy Tour',
   },
   description:
-    'Há mais de 30 anos conectando pessoas com destinos. Fretamento, transporte, passeios e turismo nacional com saídas de Maratá e região.',
+    'Excursões, bate-voltas e passeio de escuna com saídas de Salvador e região. Cadastur e atendimento humanizado. Viajar é preciso!',
   keywords:
-    'maratá tur, turismo, viagens, passeios, excursões, fretamento, transporte, turismo Rio Grande do Sul, Maratá RS',
-  authors: [{ name: 'Maratá Tur' }],
-  creator: 'Pedro Riquelme',
+    'luzy tour, luzytour, turismo salvador, excursões bahia, chapada diamantina, itacaré, escuna ilha dos frades, maragogi, bate volta salvador',
+  authors: [{ name: 'Luzy Tour' }],
+  creator: 'QeeL Tech',
   openGraph: {
     type: 'website',
     locale: 'pt_BR',
-    siteName: 'Maratá Tur',
-    title: 'Maratá Tur — Fretamento e Turismo',
+    siteName: 'Luzy Tour',
+    title: 'Luzy Tour — Viajar é Preciso!',
     description:
-      'Passeios, viagens em grupo, transporte e fretamento com mais de 30 anos de experiência.',
-    images: [{ url: '/images/destinations/cambara-itaimbezinho.jpg', width: 1920, height: 1080, alt: 'Cânion Itaimbezinho — Maratá Tur' }],
+      'Excursões, bate-voltas e passeio de escuna saindo de Salvador, Camaçari, Feira de Santana e região.',
+    images: [{ url: '/images/destinations/chapada-diamantina.jpg', width: 1280, height: 960, alt: 'Chapada Diamantina — Luzy Tour' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Maratá Tur — Fretamento e Turismo',
-    description: 'Descubra os próximos passeios da Maratá Tur.',
-    images: ['/images/destinations/cambara-itaimbezinho.jpg'],
+    title: 'Luzy Tour — Viajar é Preciso!',
+    description: 'Descubra as próximas excursões da Luzy Tour.',
+    images: ['/images/destinations/chapada-diamantina.jpg'],
   },
   robots: 'index, follow',
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
 }
 
 export const viewport = {
-  themeColor: '#13233A',
+  themeColor: '#1B4F82',
   width: 'device-width',
   initialScale: 1,
 }
@@ -59,7 +59,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR" className={`${inter.variable} ${poppins.variable}`}>
-      <body className="bg-white text-gray-900">
+      <body className="bg-[#F3F1EC] text-gray-900">
         {children}
         <FloatingWhatsApp />
       </body>

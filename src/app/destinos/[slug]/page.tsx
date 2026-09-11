@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: `${destination.title}`,
     description: destination.description,
     openGraph: {
-      title: `${destination.title} — Maratá Tur`,
+      title: `${destination.title} — Luzy Tour`,
       description: destination.description,
       images: [destination.image],
     },
@@ -67,7 +67,7 @@ export default function DestinationPage({ params }: PageProps) {
               <h2 className="mb-6 text-3xl font-bold">Sobre {destination.title}</h2>
               <p className="mb-6 text-lg text-gray-600">{destination.description}</p>
               <p className="text-gray-600">
-                Fale com a Maratá Tur para confirmar as próximas saídas, vagas e condições para{' '}
+                Fale com a Luzy Tour para confirmar as próximas saídas, vagas e condições para{' '}
                 {destination.title}. Os detalhes de cada passeio são atualizados pelo WhatsApp.
               </p>
             </div>

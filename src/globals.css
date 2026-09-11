@@ -7,6 +7,8 @@
 :root {
   --font-sans: 'Inter', sans-serif;
   --font-display: 'Poppins', sans-serif;
+  --color-brand: #1b4f82;
+  --color-gold: #c9a227;
 }
 
 * {
@@ -23,7 +25,11 @@ html {
 
 body {
   font-family: var(--font-sans);
-  background-color: #ffffff;
+  background-color: #f3f1ec;
+  background-image:
+    radial-gradient(ellipse 90% 55% at 50% -8%, rgba(27, 79, 130, 0.09), transparent 58%),
+    radial-gradient(ellipse 45% 40% at 100% 18%, rgba(201, 162, 39, 0.07), transparent 55%),
+    radial-gradient(ellipse 40% 45% at 0% 72%, rgba(27, 79, 130, 0.05), transparent 50%);
   color: #1a1a1a;
   line-height: 1.6;
   overflow-x: clip;
@@ -67,7 +73,7 @@ p {
 button:focus-visible,
 a:focus-visible,
 input:focus-visible {
-  outline: 2px solid #c97808;
+  outline: 2px solid #c9a227;
   outline-offset: 2px;
 }
 
@@ -99,7 +105,7 @@ a {
 .header-whatsapp-cta:focus,
 .header-whatsapp-cta:active {
   color: #ffffff !important;
-  background-color: #c97808 !important;
+  background-color: #c9a227 !important;
 }
 
 /* Form styles */
@@ -113,7 +119,7 @@ select {
 input:focus,
 textarea:focus,
 select:focus {
-  outline: 2px solid #c97808;
+  outline: 2px solid #c9a227;
   outline-offset: 2px;
 }
 
@@ -151,8 +157,43 @@ select:focus {
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #c97808 0%, #8f5004 100%);
+  background: linear-gradient(135deg, #c9a227 0%, #1b4f82 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+
+/* Paleta da logo Luzy Tour (azul + dourado), acima do cache do Tailwind */
+.bg-orange-500 { background-color: #c9a227 !important; }
+.hover\:bg-orange-500:hover,
+.hover\:\!bg-orange-500:hover { background-color: #c9a227 !important; }
+.hover\:bg-orange-600:hover { background-color: #a8861f !important; }
+.bg-orange-500\/10 { background-color: rgb(201 162 39 / 0.1) !important; }
+.bg-orange-500\/5 { background-color: rgb(201 162 39 / 0.05) !important; }
+.from-orange-500\/10 { --tw-gradient-from: rgb(201 162 39 / 0.1) !important; --tw-gradient-to: rgb(201 162 39 / 0) !important; --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important; }
+.from-orange-500\/5 { --tw-gradient-from: rgb(201 162 39 / 0.05) !important; --tw-gradient-to: rgb(201 162 39 / 0) !important; --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important; }
+.text-orange-500 { color: #c9a227 !important; }
+.hover\:text-orange-500:hover { color: #c9a227 !important; }
+.border-orange-500 { border-color: #c9a227 !important; }
+.hover\:border-orange-500\/40:hover { border-color: rgb(201 162 39 / 0.4) !important; }
+.after\:bg-orange-500::after { background-color: #c9a227 !important; }
+.focus\:border-orange-500:focus { border-color: #c9a227 !important; }
+.focus\:ring-orange-500\/40:focus { --tw-ring-color: rgb(201 162 39 / 0.4) !important; }
+.focus-visible\:outline-orange-500:focus-visible { outline-color: #c9a227 !important; }
+
+.bg-blue-800 { background-color: #1b4f82 !important; }
+.hover\:bg-blue-800:hover { background-color: #1b4f82 !important; }
+.bg-blue-900 { background-color: #16426e !important; }
+.hover\:bg-blue-900:hover,
+.hover\:\!bg-blue-900:hover { background-color: #16426e !important; }
+.bg-blue-950 { background-color: #0f2d4a !important; }
+.hover\:bg-blue-950:hover,
+.hover\:\!bg-blue-950:hover { background-color: #0f2d4a !important; }
+.text-blue-800 { color: #1b4f82 !important; }
+.text-blue-900 { color: #16426e !important; }
+.hover\:text-blue-800:hover { color: #1b4f82 !important; }
+.hover\:text-blue-900:hover { color: #16426e !important; }
+.border-blue-800 { border-color: #1b4f82 !important; }
+.border-blue-900 { border-color: #16426e !important; }
+.focus\:ring-blue-800:focus { --tw-ring-color: #1b4f82 !important; }
+.focus-visible\:\!outline-blue-900:focus-visible { outline-color: #16426e !important; }

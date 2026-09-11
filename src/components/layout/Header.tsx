@@ -45,22 +45,15 @@ export const Header: React.FC = () => {
       className={clsx(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
         solid
-          ? 'bg-white/90 backdrop-blur-md shadow-sm py-3'
+          ? 'border-b border-[#1B4F82]/10 bg-[#F3F1EC]/90 py-3 shadow-none backdrop-blur-md'
           : 'bg-gradient-to-b from-black/40 to-transparent py-5'
       )}
     >
       <Container>
         <nav className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center" aria-label="Maratá Tur — página inicial">
-            <span
-              className={clsx(
-                'relative block transition-all',
-                !solid && 'rounded-md bg-white/95 px-3 py-2'
-              )}
-            >
-              <BrandLogo />
-            </span>
+          <Link href="/" className="flex items-center" aria-label="Luzy Tour — página inicial">
+            <BrandLogo className={clsx('transition-shadow', !solid && 'shadow-md')} />
           </Link>
 
           {/* Desktop Navigation */}
@@ -88,7 +81,7 @@ export const Header: React.FC = () => {
               className="header-whatsapp-cta hidden sm:inline-flex items-center gap-2 rounded-full bg-orange-500 px-5 py-2.5 text-sm font-semibold !text-white transition-all hover:!bg-orange-500 hover:!text-white hover:brightness-110 hover:shadow-md"
             >
               <WhatsAppIcon className="h-4 w-4" />
-              Falar com a Maratá Tur
+              Falar com a Luzy Tour
             </a>
 
             <button
@@ -130,7 +123,7 @@ export const Header: React.FC = () => {
               className="header-whatsapp-cta mt-2 flex items-center justify-center gap-2 rounded-lg bg-orange-500 px-4 py-3 text-center font-semibold !text-white transition-all hover:!bg-orange-500 hover:!text-white hover:brightness-110"
             >
               <WhatsAppIcon className="h-5 w-5" />
-              Falar com a Maratá Tur
+              Falar com a Luzy Tour
             </a>
           </div>
         </div>

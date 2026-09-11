@@ -10,8 +10,8 @@ export const CTASection: React.FC = () => {
   return (
     <section className="relative flex min-h-[680px] items-center overflow-hidden md:min-h-[780px]">
       <Image
-        src="/images/destinations/ita-torres.jpg"
-        alt="Torres da antiga igreja de Itá, em Santa Catarina"
+        src="/images/destinations/salvador-farol-da-barra.jpg"
+        alt="Farol da Barra ao entardecer em Salvador"
         fill
         sizes="100vw"
         className="object-cover"
@@ -26,7 +26,7 @@ export const CTASection: React.FC = () => {
         </Reveal>
         <Reveal delay={0.1}>
           <p className="mx-auto mb-10 max-w-2xl text-lg text-gray-100">
-            Escolha um passeio ou solicite seu fretamento diretamente com a equipe da Maratá Tur.
+            Escolha uma excursão ou solicite seu orçamento diretamente com a equipe da Luzy Tour.
           </p>
         </Reveal>
 

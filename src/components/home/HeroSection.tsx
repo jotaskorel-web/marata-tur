@@ -36,8 +36,8 @@ export const HeroSection: React.FC = () => {
         transition={{ duration: 1.4, ease: [0.22, 1, 0.36, 1] }}
       >
         <Image
-          src="/images/destinations/cambara-itaimbezinho.jpg"
-          alt="Cânion Itaimbezinho em Cambará do Sul"
+          src="/images/destinations/chapada-diamantina.jpg"
+          alt="Morro do Pai Inácio na Chapada Diamantina"
           fill
           priority
           sizes="100vw"
@@ -57,15 +57,15 @@ export const HeroSection: React.FC = () => {
             variants={item}
             className="mb-6 text-4xl font-extrabold leading-tight md:text-6xl"
           >
-            Conectando pessoas com destinos.
+            Viajar é preciso.
           </motion.h1>
 
           <motion.p
             variants={item}
             className="mx-auto mb-10 max-w-2xl text-lg text-gray-100 md:text-xl"
           >
-            Há mais de 30 anos levando você a viver novos lugares com transporte confortável,
-            roteiros acompanhados e experiências em grupo.
+            Excursões, bate-voltas e passeio de escuna saindo de Salvador e região.
+            Cadastur, atendimento humanizado e destinos que você vê no Instagram.
           </motion.p>
 
           {/* CTAs */}
@@ -75,7 +75,7 @@ export const HeroSection: React.FC = () => {
           >
             <Link
               href="/destinos"
-              className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-[#F97316] px-6 py-2.5 text-sm font-semibold text-white transition-all hover:bg-[#EA580C] hover:shadow-lg sm:w-auto"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-orange-500 px-6 py-2.5 text-sm font-semibold text-white transition-all hover:bg-orange-600 hover:shadow-lg sm:w-auto"
             >
               Ver próximos passeios
               <ArrowRight className="h-4 w-4" />

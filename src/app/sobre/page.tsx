@@ -7,19 +7,20 @@ import { Breadcrumb } from '@/components/ui/Breadcrumb'
 import { BenefitsSection } from '@/components/home/BenefitsSection'
 import { Reveal } from '@/components/ui/Reveal'
 import { generateWhatsAppLink, WHATSAPP_MESSAGES } from '@/config/contact'
+import { PHOTOS } from '@/data/photos'
 import { MessageCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Sobre nós — a história da Maratá Tur',
+  title: 'Sobre nós — a Luzy Tour',
   description:
-    'Conheça a Maratá Tur: mais de 30 anos de experiência em fretamento, transporte, passeios e turismo nacional.',
+    'Conheça a Luzy Tour: excursões, bate-voltas e passeio de escuna saindo de Salvador e região. Cadastur e atendimento humanizado.',
 }
 
 const stats = [
-  { value: '+30 anos', label: 'Conectando pessoas e destinos' },
-  { value: '131+', label: 'Publicações no Instagram' },
-  { value: '3', label: 'Cidades de embarque recorrente' },
-  { value: '@marata_tur', label: 'Acompanhe no Instagram' },
+  { value: 'Cadastur', label: 'Turismo legal e regularizado' },
+  { value: '16,7 mil', label: 'Seguidores no Instagram' },
+  { value: '5', label: 'Cidades de embarque na região' },
+  { value: '@luzytour', label: 'Acompanhe no Instagram' },
 ]
 
 export default function SobrePage() {
@@ -27,18 +28,17 @@ export default function SobrePage() {
     <>
       <Header />
       <main>
-        {/* Hero */}
         <section className="relative mt-16 h-[360px] w-full md:h-[440px]">
-          <Image src="/images/destinations/cambara-itaimbezinho.jpg" alt="Cânion Itaimbezinho em Cambará do Sul" fill priority sizes="100vw" className="object-cover" />
+          <Image src={PHOTOS.chapada} alt="Morro do Pai Inácio na Chapada Diamantina" fill priority sizes="100vw" className="object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/40" />
           <Container className="relative z-10 flex h-full flex-col justify-end pb-10">
             <Breadcrumb
               className="mb-4 [&_*]:text-gray-200"
               items={[{ label: 'Início', href: '/' }, { label: 'Sobre nós' }]}
             />
-            <p className="mb-2 text-sm font-semibold uppercase tracking-wider text-gray-200">Sobre a Maratá Tur</p>
+            <p className="mb-2 text-sm font-semibold uppercase tracking-wider text-gray-200">Sobre a Luzy Tour</p>
             <h1 className="max-w-2xl text-3xl font-bold text-white md:text-5xl">
-              Mais de 30 anos na estrada
+              Viajar é preciso
             </h1>
           </Container>
         </section>
@@ -47,7 +47,7 @@ export default function SobrePage() {
           <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
             <Reveal>
               <div className="relative h-[420px] w-full overflow-hidden rounded-xl">
-                <Image src="/images/marata/cambara-do-sul.jpg" alt="Grupo da Maratá Tur em Cambará do Sul" fill sizes="(max-width:768px) 100vw, 50vw" className="object-cover" />
+                <Image src={PHOTOS.ilhaDosFrades} alt="Ilha dos Frades, destino do passeio de escuna da Luzy Tour" fill sizes="(max-width:768px) 100vw, 50vw" className="object-cover" />
               </div>
             </Reveal>
 
@@ -56,23 +56,23 @@ export default function SobrePage() {
                 <h2 className="mb-6 text-3xl font-bold">Nossa história</h2>
                 <div className="space-y-4 text-lg text-gray-600">
                   <p>
-                    A Maratá Tur atua há mais de 30 anos conectando pessoas com destinos. A empresa
-                    reúne experiência em transporte rodoviário, fretamento e turismo nacional.
+                    A Luzy Tour é uma agência de excursões de Salvador. Levamos grupos à Chapada
+                    Diamantina, Itacaré, Maragogi, Aracaju, Natal, Foz do Iguaçu e até à neve no Chile.
                   </p>
                   <p>
-                    Os passeios divulgados combinam ônibus de turismo, guias credenciados,
-                    experiências regionais, hospedagem e gastronomia, conforme cada roteiro.
+                    Os pacotes combinam ônibus executivo, hospedagem com café da manhã, translado
+                    aos passeios e coordenador de grupo. Também fazemos bate-voltas e o passeio de
+                    escuna para Ilha dos Frades e Itaparica.
                   </p>
                   <p>
-                    Maratá, Brochier e Montenegro aparecem como pontos recorrentes de embarque,
-                    facilitando a participação de viajantes da região.
+                    As saídas partem de Salvador, Camaçari, Feira de Santana, Santo Estevão e Dias
+                    d&apos;Ávila. Somos cadastrados no Cadastur e o atendimento é humanizado, pelo WhatsApp.
                   </p>
                 </div>
               </div>
             </Reveal>
           </div>
 
-          {/* Números reais */}
           <div className="mt-16 grid grid-cols-2 gap-6 rounded-2xl bg-gray-50 p-8 md:grid-cols-4">
             {stats.map((s) => (
               <div key={s.label} className="text-center">
@@ -89,7 +89,7 @@ export default function SobrePage() {
           <div className="rounded-2xl bg-orange-500 px-8 py-12 text-center text-white">
             <h2 className="mb-3 text-2xl font-bold md:text-3xl">Vamos viajar juntos?</h2>
             <p className="mx-auto mb-6 max-w-xl text-gray-100">
-              Fale com a nossa equipe e comece a planejar a sua próxima experiência com a Maratá Tur.
+              Fale com a nossa equipe e comece a planejar a sua próxima experiência com a Luzy Tour.
             </p>
             <a
               href={generateWhatsAppLink(WHATSAPP_MESSAGES.general)}

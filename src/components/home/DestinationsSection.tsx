@@ -13,11 +13,11 @@ export const DestinationsSection: React.FC = () => {
   const items = destinations.filter((destination) => destination.featured)
 
   return (
-    <Section id="destinations">
+    <Section id="destinations" className="bg-gradient-to-b from-[#1B4F82]/[0.06] to-transparent">
       <SectionTitle
         eyebrow="Destinos em destaque"
         title="Seu próximo destino começa aqui"
-        subtitle="Da Serra Gaúcha às termas, à fronteira e aos resorts — conheça os roteiros divulgados pela Maratá Tur."
+        subtitle="Da Chapada Diamantina às praias do Nordeste — conheça os roteiros divulgados pela Luzy Tour."
       />
 
       <div className="mb-12">

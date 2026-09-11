@@ -19,7 +19,7 @@ export const ContactForm: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    const message = `Olá! Vim pelo site da Maratá Tur.
+    const message = `Olá! Vim pelo site da Luzy Tour.
 *Nome:* ${data.name}
 *WhatsApp:* ${data.whatsapp}
 *E-mail:* ${data.email}
@@ -44,7 +44,7 @@ export const ContactForm: React.FC = () => {
           <label htmlFor="whatsapp" className="mb-2 block text-sm font-medium text-gray-700">
             WhatsApp *
           </label>
-          <input id="whatsapp" name="whatsapp" type="tel" required value={data.whatsapp} onChange={update} className={inputClass} placeholder="(51) 99999-9999" />
+          <input id="whatsapp" name="whatsapp" type="tel" required value={data.whatsapp} onChange={update} className={inputClass} placeholder="(71) 99999-9999" />
         </div>
       </div>
 

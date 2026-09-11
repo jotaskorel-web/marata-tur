@@ -8,11 +8,11 @@ import { socialPosts } from '@/data'
 
 export const InstagramSection: React.FC = () => {
   return (
-    <Section className="bg-gray-50">
+    <Section className="bg-[#1B4F82]/[0.045]">
       <SectionTitle
         eyebrow="Nas redes"
         title="Acompanhe nossas viagens"
-        subtitle="Momentos e ofertas publicados pela Maratá Tur. Siga @marata_tur no Instagram."
+        subtitle="Momentos e ofertas publicados pela Luzy Tour. Siga @luzytour no Instagram."
       />
 
       <div className="mx-auto mb-10 grid max-w-3xl grid-cols-3 gap-1 sm:gap-2">

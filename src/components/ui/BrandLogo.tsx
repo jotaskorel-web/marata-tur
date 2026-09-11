@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import clsx from 'clsx'
 
 interface BrandLogoProps {
@@ -6,26 +7,18 @@ interface BrandLogoProps {
   light?: boolean
 }
 
-export const BrandLogo: React.FC<BrandLogoProps> = ({ className, compact = false, light = false }) => (
-  <span className={clsx('inline-flex items-center gap-2.5', className)} aria-label="Maratá Tur">
-    <span
-      aria-hidden="true"
+export const BrandLogo: React.FC<BrandLogoProps> = ({ className, compact = false }) => (
+  <span className={clsx('inline-flex items-center overflow-hidden rounded-lg', className)} aria-label="Luzy Tour">
+    <Image
+      src="/images/brand/luzy-tour-logo.png"
+      alt="Luzy Tour — Viagens e Turismo"
+      width={compact ? 220 : 320}
+      height={compact ? 72 : 104}
       className={clsx(
-        'relative block h-9 w-9 shrink-0 border-[2px]',
-        light ? 'border-white' : 'border-[#13233a]'
+        'w-auto object-contain object-left',
+        compact ? 'h-11' : 'h-12 sm:h-14 md:h-16'
       )}
-    >
-      <span className={clsx('absolute -right-[3px] top-2 h-4 w-4 border-y-[2px] border-r-[2px]', light ? 'border-white' : 'border-[#13233a]')} />
-    </span>
-    {!compact && (
-      <span className="flex flex-col leading-none">
-        <span className={clsx('whitespace-nowrap text-lg font-semibold uppercase tracking-[0.24em]', light ? 'text-white' : 'text-[#13233a]')}>
-          Maratá Tur
-        </span>
-        <span className={clsx('mt-1 whitespace-nowrap text-[8px] font-medium uppercase tracking-[0.25em]', light ? 'text-white/70' : 'text-[#5d6470]')}>
-          Fretamento e turismo
-        </span>
-      </span>
-    )}
+      priority
+    />
   </span>
 )

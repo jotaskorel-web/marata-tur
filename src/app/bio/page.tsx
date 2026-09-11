@@ -12,8 +12,8 @@ import { CONTACT, generateWhatsAppLink, WHATSAPP_MESSAGES } from '@/config/conta
 import { BrandLogo } from '@/components/ui/BrandLogo'
 
 export const metadata: Metadata = {
-  title: 'Links — Maratá Tur',
-  description: 'Todos os links da Maratá Tur em um só lugar: passeios, destinos, WhatsApp e Instagram.',
+  title: 'Links — Luzy Tour',
+  description: 'Todos os links da Luzy Tour em um só lugar: excursões, destinos, WhatsApp e Instagram.',
   robots: 'index, follow',
 }
 
@@ -50,17 +50,17 @@ const links = [
 
 export default function BioPage() {
   return (
-    <div className="flex min-h-[100dvh] flex-col items-center bg-gradient-to-b from-orange-500/10 via-white to-white px-5 py-10">
+    <div className="flex min-h-[100dvh] flex-col items-center bg-gradient-to-b from-[#1B4F82]/10 via-[#F3F1EC] to-[#F3F1EC] px-5 py-10">
       <div className="flex w-full max-w-md flex-1 flex-col">
         {/* Cabeçalho */}
         <div className="mb-8 text-center">
-          <div className="relative mx-auto mb-4 h-20 w-20 overflow-hidden rounded-2xl bg-white shadow-md ring-1 ring-black/5">
-            <BrandLogo compact className="absolute inset-0 justify-center" />
+          <div className="mx-auto mb-4 flex justify-center">
+            <BrandLogo />
           </div>
-          <h1 className="text-2xl font-bold text-gray-900">Maratá Tur</h1>
-          <p className="mt-1 text-sm font-medium text-orange-500">@marata_tur</p>
+          <h1 className="text-2xl font-bold text-gray-900">Luzy Tour</h1>
+          <p className="mt-1 text-sm font-medium text-orange-500">@luzytour</p>
           <p className="mx-auto mt-3 max-w-xs text-sm text-gray-600">
-            Há mais de 30 anos conectando pessoas com destinos · Fretamento, transporte e turismo nacional.
+            Viajar é preciso · Excursões, bate-voltas e passeio de escuna saindo de Salvador.
           </p>
         </div>
 
@@ -101,13 +101,13 @@ export default function BioPage() {
           className="group mt-3 flex items-center gap-3 rounded-2xl bg-gradient-to-r from-purple-500 to-pink-500 px-5 py-4 text-white shadow-md transition-all hover:-translate-y-0.5 hover:shadow-lg active:translate-y-0"
         >
           <Instagram className="h-6 w-6" />
-          <span className="flex-1 font-semibold">📸 Instagram @marata_tur</span>
+          <span className="flex-1 font-semibold">📸 Instagram @luzytour</span>
           <ChevronRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
         </a>
 
         {/* Rodapé */}
         <div className="mt-auto pt-10 text-center text-xs text-gray-500">
-          <p>{CONTACT.phoneDisplay} · {CONTACT.phoneSecondaryDisplay}</p>
+          <p>{CONTACT.phoneDisplay}</p>
           <p className="mt-1">
             {CONTACT.address.city}, {CONTACT.address.state}
           </p>

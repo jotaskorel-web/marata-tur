@@ -13,7 +13,7 @@ import { Calendar, Clock, ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Blog — dicas e roteiros de viagem',
-  description: 'Dicas, roteiros e novidades da Maratá Tur sobre os destinos divulgados.',
+  description: 'Dicas, roteiros e novidades da Luzy Tour sobre os destinos divulgados.',
 }
 
 export default function BlogPage() {

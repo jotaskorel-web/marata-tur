@@ -18,32 +18,32 @@ const navLinks = [
 ]
 
 const destinationLinks = [
-  { label: 'Gramado e Nova Petrópolis', href: '/destinos/gramado-e-nova-petropolis' },
-  { label: 'Termas Romanas', href: '/destinos/restinga-seca' },
-  { label: 'Trem do Pampa e Rivera', href: '/destinos/santana-do-livramento' },
-  { label: 'Rota das Lavandas', href: '/destinos/morro-reuter' },
-  { label: 'Itá (SC)', href: '/destinos/ita' },
+  { label: 'Chapada Diamantina', href: '/destinos/chapada-diamantina' },
+  { label: 'Itacaré', href: '/destinos/itacare' },
+  { label: 'Ilha dos Frades', href: '/destinos/ilha-dos-frades' },
+  { label: 'Maragogi', href: '/destinos/maragogi' },
+  { label: 'Natal', href: '/destinos/natal' },
 ]
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-900 text-gray-100">
+    <footer className="bg-blue-950 text-gray-100">
       <div className="border-b border-gray-800">
         <Container className="py-12">
           <div className="grid grid-cols-1 gap-8 text-center md:grid-cols-2 md:text-left lg:grid-cols-4">
             {/* Marca */}
             <div>
-              <BrandLogo light className="mb-5" />
+              <BrandLogo className="mb-5" />
               <p className="mb-4 text-gray-400">
-                Há mais de 30 anos conectando pessoas com destinos por meio de fretamento,
-                transporte e turismo nacional.
+                Excursões, bate-voltas e passeio de escuna saindo de Salvador e região.
+                Cadastur e atendimento humanizado.
               </p>
               <a
                 href={CONTACT.instagramUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-gray-800 text-gray-300 transition-colors hover:bg-orange-500 hover:text-white"
-                aria-label="Instagram da Maratá Tur"
+                aria-label="Instagram da Luzy Tour"
               >
                 <Instagram className="h-5 w-5" />
               </a>
@@ -92,14 +92,6 @@ export const Footer: React.FC = () => {
                     >
                       {CONTACT.phoneDisplay}
                     </a>
-                    <a
-                      href={generateWhatsAppLink(WHATSAPP_MESSAGES.general, CONTACT.whatsappSecondary)}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-gray-400 transition-colors hover:text-orange-500"
-                    >
-                      {CONTACT.phoneSecondaryDisplay}
-                    </a>
                   </div>
                 </li>
                 <li className="flex items-start justify-center gap-2 md:justify-start">
@@ -116,7 +108,7 @@ export const Footer: React.FC = () => {
 
       <Container className="py-8">
         <div className="flex flex-col items-center justify-between gap-4 text-sm text-gray-400 md:flex-row">
-          <p>&copy; {currentYear} Maratá Tur. Todos os direitos reservados.</p>
+          <p>&copy; {currentYear} Luzy Tour. Todos os direitos reservados.</p>
           <div className="flex gap-6">
             <Link href="/privacidade" className="hover:text-orange-500">
               Política de Privacidade
@@ -131,12 +123,12 @@ export const Footer: React.FC = () => {
           <p>
             Desenvolvido por{' '}
             <a
-              href="https://pedroriquelme.com.br/"
+              href="https://qeel.com.br/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-orange-500 hover:underline"
             >
-              Pedro Riquelme
+              QeeL Tech
             </a>
           </p>
         </div>

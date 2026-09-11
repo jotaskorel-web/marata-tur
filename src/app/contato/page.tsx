@@ -9,9 +9,9 @@ import { MessageCircle, MapPin, Clock, Instagram } from 'lucide-react'
 import { CONTACT, generateWhatsAppLink, WHATSAPP_MESSAGES } from '@/config/contact'
 
 export const metadata: Metadata = {
-  title: 'Contato — fale com a Maratá Tur',
+  title: 'Contato — fale com a Luzy Tour',
   description:
-    'Fale com a Maratá Tur pelo WhatsApp, Instagram ou pelo formulário para reservar passeios e solicitar fretamentos.',
+    'Fale com a Luzy Tour pelo WhatsApp, Instagram ou pelo formulário para reservar excursões e bate-voltas.',
 }
 
 export default function ContatoPage() {
@@ -25,10 +25,7 @@ export default function ContatoPage() {
     {
       icon: MessageCircle,
       title: 'WhatsApp',
-      lines: [
-        { text: CONTACT.phoneDisplay, href: generateWhatsAppLink(WHATSAPP_MESSAGES.general) },
-        { text: CONTACT.phoneSecondaryDisplay, href: generateWhatsAppLink(WHATSAPP_MESSAGES.general, CONTACT.whatsappSecondary) },
-      ],
+      lines: [{ text: CONTACT.phoneDisplay, href: generateWhatsAppLink(WHATSAPP_MESSAGES.general) }],
       note: 'Resposta rápida e atendimento ágil',
     },
     {
@@ -41,7 +38,7 @@ export default function ContatoPage() {
       icon: MapPin,
       title: 'Localização',
       lines: [{ text: `${CONTACT.address.city}, ${CONTACT.address.state} — ${CONTACT.address.country}` }],
-      note: 'Embarques recorrentes em Maratá, Brochier e Montenegro',
+      note: 'Embarques em Salvador, Camaçari, Feira de Santana, Santo Estevão e Dias d’Ávila',
     },
     {
       icon: Clock,

@@ -4,7 +4,7 @@ import { Footer } from '@/components/layout/Footer'
 import { Container, Section } from '@/components/ui/Layout'
 
 export const metadata: Metadata = {
-  title: 'Política de Privacidade - Maratá Tur',
+  title: 'Política de Privacidade - Luzy Tour',
 }
 
 export default function PrivacidadePage() {
@@ -20,7 +20,7 @@ export default function PrivacidadePage() {
               <section>
                 <h2 className="text-2xl font-bold mb-4">1. Informações que Coletamos</h2>
                 <p>
-                  A Maratá Tur coleta informações que você nos fornece diretamente, como nome,
+                  A Luzy Tour coleta informações que você nos fornece diretamente, como nome,
                   email, telefone e dados de viagem quando você preenche formulários em nosso site.
                 </p>
               </section>

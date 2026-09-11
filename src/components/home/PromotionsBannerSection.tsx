@@ -65,11 +65,11 @@ export const PromotionsBannerSection: React.FC = () => {
   if (promos.length === 0) return null
 
   return (
-    <Section id="promocoes" className="overflow-x-hidden bg-white !pt-8 md:!pt-12">
+    <Section id="promocoes" className="overflow-x-hidden !pt-8 md:!pt-12">
       <SectionTitle
         eyebrow="Promoções"
         title="Ofertas para embarcar agora"
-        subtitle="Datas, roteiros e valores publicados pela Maratá Tur. Confirme a disponibilidade pelo WhatsApp."
+        subtitle="Datas, roteiros e valores publicados pela Luzy Tour. Confirme a disponibilidade pelo WhatsApp."
       />
 
       <Reveal>

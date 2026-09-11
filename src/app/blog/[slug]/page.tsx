@@ -87,7 +87,7 @@ export default function BlogPostPage({ params }: PageProps) {
             <div className="mt-12 rounded-xl bg-gray-50 p-8">
               <h3 className="mb-3 text-2xl font-bold">Quer viver essa experiência?</h3>
               <p className="mb-6 text-gray-600">
-                Fale com a Maratá Tur e descubra as próximas saídas para esse e outros destinos.
+                Fale com a Luzy Tour e descubra as próximas saídas para esse e outros destinos.
               </p>
               <a
                 href={generateWhatsAppLink(WHATSAPP_MESSAGES.general)}

@@ -1,7 +1,7 @@
 {
-  "name": "marata-tur-site",
+  "name": "luzy-tour-site",
   "version": "1.0.0",
-  "description": "Site institucional da Maratá Tur - Fretamento e Turismo",
+  "description": "Site institucional da Luzy Tour - Excursões e Turismo",
   "private": true,
   "scripts": {
     "dev": "next dev",

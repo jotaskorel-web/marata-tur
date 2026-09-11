@@ -3,15 +3,16 @@
 import { useCallback, useEffect, useState } from 'react'
 import Image from 'next/image'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
+import { PHOTOS } from '@/data/photos'
 
 const SLIDES = [
-  { src: '/images/destinations/cambara-itaimbezinho.jpg', alt: 'Cânion Itaimbezinho em Cambará do Sul' },
-  { src: '/images/destinations/gramado-lago-negro.jpg', alt: 'Lago Negro em Gramado' },
-  { src: '/images/destinations/lavandas.jpg', alt: 'Campo de lavandas' },
-  { src: '/images/destinations/ita-torres.jpg', alt: 'Torres da antiga igreja de Itá' },
-  { src: '/images/destinations/santana-livramento-rivera.jpg', alt: 'Sant’Ana do Livramento na fronteira com Rivera' },
-  { src: '/images/marata/cambara-do-sul.jpg', alt: 'Grupo da Maratá Tur em Cambará do Sul' },
-  { src: '/images/marata/trem-do-pampa-experiencia.jpg', alt: 'Grupo da Maratá Tur em passeio pela Serra Gaúcha' },
+  { src: PHOTOS.chapada, alt: 'Morro do Pai Inácio na Chapada Diamantina' },
+  { src: PHOTOS.itacare, alt: 'Praia da Concha em Itacaré' },
+  { src: PHOTOS.ilhaDosFrades, alt: 'Ilha dos Frades na Baía de Todos-os-Santos' },
+  { src: PHOTOS.maragogi, alt: 'Praia do Peroba em Maragogi' },
+  { src: PHOTOS.gunga, alt: 'Praia do Gunga em Alagoas' },
+  { src: PHOTOS.fozIguacu, alt: 'Cataratas do Iguaçu' },
+  { src: PHOTOS.salvador, alt: 'Farol da Barra ao entardecer em Salvador' },
 ]
 
 const AUTOPLAY_MS = 5000
@@ -40,7 +41,7 @@ export const AboutImageSlider: React.FC = () => {
       onFocusCapture={() => setPaused(true)}
       onBlurCapture={() => setPaused(false)}
       aria-roledescription="carrossel"
-      aria-label="Fotos das viagens da Maratá Tur"
+      aria-label="Fotos dos destinos da Luzy Tour"
     >
       <div
         className="flex h-[420px] transition-transform duration-500 ease-out motion-reduce:transition-none"

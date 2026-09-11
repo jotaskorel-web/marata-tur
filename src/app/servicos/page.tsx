@@ -8,56 +8,57 @@ import { Breadcrumb } from '@/components/ui/Breadcrumb'
 import { Card, ImagePlaceholder } from '@/components/ui/Card'
 import { Reveal } from '@/components/ui/Reveal'
 import { generateWhatsAppLink, WHATSAPP_MESSAGES } from '@/config/contact'
+import { PHOTOS } from '@/data/photos'
 import { CalendarDays, Hotel, Utensils, Ticket, Bus, MapPin, ArrowRight, MessageCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Serviços — o que a Maratá Tur oferece',
+  title: 'Serviços — o que a Luzy Tour oferece',
   description:
-    'Fretamento, transporte para eventos, passeios de um dia e viagens rodoviárias em grupo com a Maratá Tur.',
+    'Excursões, bate-voltas, passeio de escuna e pacotes com aéreo. Saídas de Salvador e região com a Luzy Tour.',
 }
 
 const services = [
   {
     icon: Bus,
-    title: 'Fretamento',
-    image: '/images/marata/logo-marata-tur.jpg',
+    title: 'Excursões',
+    image: PHOTOS.chapada,
     description:
-      'Transporte para grupos, empresas, escolas e eventos, com orçamento direto pelo WhatsApp.',
+      'Viagens de dois a quatro dias com transporte executivo, hospedagem, translado e coordenador de grupo.',
   },
   {
     icon: MapPin,
-    title: 'Passeios de um dia',
-    image: '/images/destinations/lavandas.jpg',
+    title: 'Bate-voltas',
+    image: PHOTOS.salvador,
     description:
-      'Bate-voltas com roteiro organizado, transporte, guia e experiências gastronômicas ou culturais.',
+      'Passeios de um dia saindo de Salvador, para quem quer viajar sem precisar de hospedagem.',
   },
   {
     icon: Hotel,
-    title: 'Viagens com hospedagem',
-    image: '/images/destinations/santana-livramento-rivera.jpg',
+    title: 'Passeio de escuna',
+    image: PHOTOS.ilhaDosFrades,
     description:
-      'Roteiros de mais dias com hotel, café da manhã e programação organizada conforme o pacote.',
+      'Ilha dos Frades e Itaparica todos os dias da semana, com paisagens da Baía de Todos-os-Santos.',
   },
   {
     icon: Ticket,
-    title: 'Transporte para eventos',
-    image: '/images/marata/universo-alegria.jpg',
+    title: 'Pacotes com aéreo',
+    image: PHOTOS.natal,
     description:
-      'Ida e volta para shows, feiras e eventos em Porto Alegre, Esteio e outros destinos.',
+      'Natal, Foz do Iguaçu e Chile com aéreo, transfer, hospedagem e city tour.',
   },
   {
     icon: Utensils,
-    title: 'Turismo de experiência',
-    image: '/images/marata/percorsi-anta-gorda.jpg',
+    title: 'Litoral nordestino',
+    image: PHOTOS.maragogi,
     description:
-      'Cultura, gastronomia, vinícolas, café colonial e contato com as tradições das comunidades visitadas.',
+      'Itacaré, Morro de São Paulo, Maragogi, Maceió e Aracaju — mar, sol e boas companhias.',
   },
   {
     icon: CalendarDays,
-    title: 'Termas e resorts',
-    image: '/images/destinations/ita-torres.jpg',
+    title: 'Grupos e feriadões',
+    image: PHOTOS.aracaju,
     description:
-      'Hospedagem com lazer, piscinas, refeições e opções all inclusive em viagens selecionadas.',
+      'Saídas em datas especiais, com ônibus executivo, pulseira de identificação e coordenador.',
   },
 ]
 
@@ -70,7 +71,7 @@ export default function ServicosPage() {
           <Breadcrumb className="mb-6" items={[{ label: 'Início', href: '/' }, { label: 'Serviços' }]} />
           <SectionTitle
             eyebrow="Serviços"
-            title="Tudo o que a Maratá Tur faz por você"
+            title="Tudo o que a Luzy Tour faz por você"
             subtitle="Do sonho ao embarque: cuidamos de cada detalhe da sua viagem, seja qual for o estilo."
           />
 

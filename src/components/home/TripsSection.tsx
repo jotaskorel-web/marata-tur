@@ -13,7 +13,7 @@ export const TripsSection: React.FC = () => {
   )
 
   return (
-    <Section id="trips" className="bg-gray-50">
+    <Section id="trips" className="bg-[#1B4F82]/[0.045]">
       <SectionTitle
         eyebrow="Próximas viagens"
         title="Embarque na sua próxima aventura"

@@ -3,24 +3,24 @@ import { Section } from '@/components/ui/Layout'
 import { SectionTitle } from '@/components/ui/Typography'
 import { Card, ImagePlaceholder } from '@/components/ui/Card'
 import { Reveal } from '@/components/ui/Reveal'
+import { PHOTOS } from '@/data/photos'
 
-// Tipos de experiências divulgados pela Maratá Tur
 const experienceTypes = [
-  { id: '1', title: 'Passeios de um dia', description: 'Cultura, gastronomia e natureza', image: '/images/destinations/lavandas.jpg' },
-  { id: '2', title: 'Termas e resorts', description: 'Hospedagem, lazer e pensão completa', image: '/images/marata/termas-romanas.jpg' },
-  { id: '3', title: 'Experiências regionais', description: 'Roteiros especiais pelo Sul do Brasil', image: '/images/destinations/gramado-lago-negro.jpg' },
-  { id: '4', title: 'Viagens em grupo', description: 'Novos lugares e boas companhias', image: '/images/destinations/cambara-itaimbezinho.jpg' },
-  { id: '5', title: 'Transporte para eventos', description: 'Shows, feiras e eventos', image: '/images/marata/universo-alegria.jpg' },
-  { id: '6', title: 'Fretamento', description: 'Transporte para seu grupo ou empresa', image: '/images/marata/logo-marata-tur.jpg' },
+  { id: '1', title: 'Excursões', description: 'Chapada, Itacaré, Aracaju e mais', image: PHOTOS.chapada },
+  { id: '2', title: 'Bate-voltas', description: 'Passeios de um dia saindo de Salvador', image: PHOTOS.salvador },
+  { id: '3', title: 'Passeio de escuna', description: 'Ilha dos Frades e Itaparica', image: PHOTOS.ilhaDosFrades },
+  { id: '4', title: 'Praias do Nordeste', description: 'Maragogi, Maceió, Natal e MSP', image: PHOTOS.maragogi },
+  { id: '5', title: 'Natureza e chapada', description: 'Cachoeiras, grutas e mirantes', image: PHOTOS.pocoAzul },
+  { id: '6', title: 'Pacotes aéreos', description: 'Natal, Foz do Iguaçu e Chile', image: PHOTOS.chile },
 ]
 
 export const ExperienceTypesSection: React.FC = () => {
   return (
-    <Section className="bg-gradient-to-b from-orange-500/5 to-white">
+    <Section className="bg-gradient-to-b from-orange-500/10 to-transparent">
       <SectionTitle
         eyebrow="Tipos de experiência"
         title="Que tipo de viagem você quer viver?"
-        subtitle="A Maratá Tur oferece passeios, viagens em grupo, transporte para eventos e fretamento."
+        subtitle="A Luzy Tour oferece excursões, bate-voltas, passeio de escuna e pacotes com aéreo."
       />
 
       <div className="grid grid-cols-2 gap-4 md:grid-cols-3">

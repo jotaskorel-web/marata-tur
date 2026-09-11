@@ -1,8 +1,8 @@
-# Maratá Tur
+# Luzy Tour
 
-Site institucional da Maratá Tur, desenvolvido com Next.js 14, TypeScript e Tailwind CSS.
+Site institucional da Luzy Tour, desenvolvido com Next.js 14, TypeScript e Tailwind CSS.
 
-O catálogo reúne passeios, viagens em grupo e transportes para eventos divulgados publicamente no Instagram [`@marata_tur`](https://www.instagram.com/marata_tur/). Valores e disponibilidade devem ser confirmados diretamente com a agência pelo WhatsApp.
+O catálogo reúne excursões, bate-voltas e o passeio de escuna divulgados publicamente no Instagram [`@luzytour`](https://www.instagram.com/luzytour/). Valores e disponibilidade devem ser confirmados diretamente com a agência pelo WhatsApp.
 
 ## Desenvolvimento
 
